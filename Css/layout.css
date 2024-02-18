@@ -12,6 +12,7 @@
 body{
     background-color: var(--main-background);
     direction: rtl;
+    font-size: 16px;
 }
 *{
     text-align: right;
@@ -19,8 +20,7 @@ body{
 
 }
 svg{
-    width: 15%;
-    height: 15%;
+   
     color: var(--icon);
 }
 #page-header{
@@ -41,10 +41,10 @@ svg{
     box-shadow: 2px 2px 5px 0px rgb(0 0 0 / 5%), -2px -2px 5px 0px rgb(0 0 0 / 5%);
 }
 nav{
-    position: fixed;
+    
     background-color: var(--background);
     right: 0;
-    width: 12%;
+    
     height: 100%;
     overflow-y: scroll;
         direction: ltr;
@@ -77,6 +77,7 @@ nav ul li a {
     -o-transition: 0.2s linear;
     transition: 0.2s linear;
     justify-content: flex-end;
+    
 }
 
 nav ul li a:hover {
@@ -95,17 +96,17 @@ nav ul li a .fa {
 nav ul ul li a{
 	color: var(--icon);
 }
-nav ul li ul li a {
+/* nav ul li ul li a {
 	
 	border-left: 4px solid transparent;
 	padding: 10px 20px;
-}
+} */
 nav ul li ul li a:hover {
 	border-left: 4px solid var(--main-color);
 }
 .navbar-brand img{
     
-    width: 26%;
+    width: 17%;
 }
 .header-txt{
     color: var(--icon);
@@ -127,7 +128,7 @@ nav ul li ul li a:hover {
     position: absolute;
     top: -102px;
 }
-.circle-box h5,h6{
+.circle-box h5, .circle-box h6{
     font-family: "adell";
     font-weight: bolder;
     color: white;
@@ -140,4 +141,8 @@ nav ul li ul li a:hover {
         background: rgb(255,255,255);
         background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(23,48,64,1) 52%, rgba(255,255,255,0) 100%);
         margin: 10px 0 10px 0;
+    }
+    .sidebar-wrapper{
+        position: fixed;
+        height: 100vh;
     }

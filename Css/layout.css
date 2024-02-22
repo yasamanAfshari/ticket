@@ -8,6 +8,12 @@
     src: url("Font/fonts/AdelleSansARA-Regular.otf");
 
 }
+@font-face {
+    font-family: "adellBold";
+    src: url("Font/fonts/AdelleSansARA-Heavy.otf");
+
+}
+
 
 body{
     background-color: var(--main-background);
@@ -18,6 +24,9 @@ body{
     text-align: right;
     font-family: "IRANSans";
 
+}
+a{
+    text-decoration: none;
 }
 svg{
    
@@ -40,7 +49,7 @@ svg{
     height: 55px;
     box-shadow: 2px 2px 5px 0px rgb(0 0 0 / 5%), -2px -2px 5px 0px rgb(0 0 0 / 5%);
 }
-nav{
+.sidebar-wrapper nav{
     
     background-color: var(--background);
     right: 0;
@@ -50,17 +59,17 @@ nav{
         direction: ltr;
         padding-bottom: 100px;
 }
-nav::-webkit-scrollbar{
+.sidebar-wrapper nav::-webkit-scrollbar{
 
     background-color:  var(--bg-color);
     border-radius: 10px;
     width: 8px;
 }
-nav::-webkit-scrollbar-thumb {
+.sidebar-wrapper nav::-webkit-scrollbar-thumb {
     background-color: #b5b5b5;
     border-radius: 10px;
 }
-nav ul {
+.sidebar-wrapper nav ul {
 	list-style: none;
 	margin: 0;
 	padding: 0;
@@ -80,20 +89,20 @@ nav ul li a {
     
 }
 
-nav ul li a:hover {
+.sidebar-wrapper  nav ul li a:hover {
 	background: var(--main-color);
 	color: var(--main-background);
 }
-nav ul li a:hover svg{
+.sidebar-wrapper nav ul li a:hover svg{
     color: var(--main-background);
 }
-nav ul li a .fa {
+.sidebar-wrapper nav ul li a .fa {
 	width: 16px;
 	text-align: center;
 	margin-right: 5px;
 	float:right;
 }
-nav ul ul li a{
+.sidebar-wrapper nav ul ul li a{
 	color: var(--icon);
 }
 /* nav ul li ul li a {
@@ -101,7 +110,7 @@ nav ul ul li a{
 	border-left: 4px solid transparent;
 	padding: 10px 20px;
 } */
-nav ul li ul li a:hover {
+.sidebar-wrapper nav ul li ul li a:hover {
 	border-left: 4px solid var(--main-color);
 }
 .navbar-brand img{
@@ -159,5 +168,7 @@ nav ul li ul li a:hover {
     }
 .sidebar-wrapper{
         position: fixed;
+        width: 15%;
         height: 100vh;
 }
+

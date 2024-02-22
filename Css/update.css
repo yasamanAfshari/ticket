@@ -1,0 +1,133 @@
+.title h5 {
+    font-family: "adellBold";
+    color: var(--main-color);
+}
+
+.box-wrapper {
+    min-height: 100px;
+    background-color: var(--background);
+    border-radius: 7px;
+    box-shadow: 2px 2px 5px 0px rgb(0 0 0 / 5%), -2px -2px 5px 0px rgb(0 0 0 / 5%);
+}
+
+.form-control {
+    font-size: 14px;
+}
+
+.form-floating>label {
+    display: flex;
+    align-items: center;
+    top: 0px;
+    right: 10px;
+    padding: 0;
+}
+
+.form-floating>.form-control,
+.form-floating>.form-control-plaintext {
+    padding: 7px;
+}
+
+.form-floating>.form-control,
+.form-floating>.form-control-plaintext,
+.form-floating>.form-select {
+    height: 35px;
+    padding-top: 1.625rem;
+    padding-bottom: 0.625rem;
+
+}
+
+.form-floating {
+    color: var(--icon);
+    width: 50%;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px 0px rgb(0 0 0 / 5%), -1px -1px 2px 0px rgb(0 0 0 / 5%);
+}
+
+.form-control:focus {
+    color: var(--bs-body-color);
+    background-color: var(--bs-form-control-bg);
+    border-color: var(--stroke);
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgb(255 255 255 / 25%);
+}
+
+.btn-register {
+    height: 35px;
+    background-color: var(--main-color);
+    border: none;
+    border-radius: 7px;
+    color: var(--background);
+    width: 120px;
+}
+
+.table {
+    border: 1px solid var(--stroke);
+}
+
+tr th {
+
+    font-weight: normal;
+}
+
+tr,
+td {
+    text-align: center;
+}
+
+tbody {
+    color: var(--icon);
+}
+
+.pagination {
+    --bs-pagination-active-bg: var(--main-color);
+    --bs-pagination-color: var(--icon);
+}
+
+.active>.page-link,
+.page-link.active {
+    background-color: var(--main-color);
+    border-color: var(--stroke);
+}
+
+.page-link:focus {
+    box-shadow: none;
+}
+
+.page-link:hover {
+    color: var(--icon);
+}
+.modal-body .form-floating{
+    width: 100% !important;
+}
+.formf{
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px 0px rgb(0 0 0 / 5%), -1px -1px 2px 0px rgb(0 0 0 / 5%);
+}
+fieldset{
+    border: 1px solid lightgray;
+    border-radius: 10px;
+}
+legend{
+    text-align: end;
+    float: none;
+    width: 50%;
+    font-size: 16px;
+    margin-right: 20px;
+
+}
+.btn2{
+    border: 1px solid var(--main-color);
+    height: 35px;
+    background-color: var(--background);
+    border-radius: 7px;
+    color: var(--main-txt);
+    width: 100px;
+}
+.form-check-input:checked{
+    background-color: var(--main-color);
+    border: none;
+}
+.form-check-input:focus{
+    box-shadow: none;
+    border-color: var(--main-color);
+}

@@ -15,6 +15,9 @@
     .text-sidebar-wrapper h6,.text-sidebar-wrapper h5{
         font-size: 16px;
     }
+    .sidebar-wrapper{
+        width: 12%;
+    }
 }
 @media (max-width: 768px) {
     nav ul li a{

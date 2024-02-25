@@ -16,14 +16,26 @@
         font-size: 16px;
     }
     .sidebar-wrapper{
-        width: 12%;
+        width: 13%;
+    }
+    .navbar-brand img {
+        width: 20%;
+    }
+    .header-txt{
+        font-size: 12px;
     }
 }
 @media (max-width: 768px) {
-    nav ul li a{
-        justify-content: center;
-    }
+    
     .header-txt{
         font-size: 14px;
+    }
+}
+@media (max-width: 576px) {
+    .sidebar-wrapper{
+        width: 40%;
+    }
+    .navbar-brand img {
+        width: 25%;
     }
 }

@@ -1,0 +1,8 @@
+@media (max-width: 576px) {
+    .btn-register{
+        width: 70px;
+    }
+    .form-floating{
+        width: 75%;
+    }
+}

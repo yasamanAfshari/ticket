@@ -158,8 +158,11 @@ legend{
    background-color: var(--table-header);
 
 }
-thead th , td, tr th{
+thead tr{
     color: var(--main-txt);
+}
+  td{
+    color: var(--icon);
 }
 .form-control{
     background-color: var(--main-background);

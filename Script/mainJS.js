@@ -8,3 +8,12 @@ $(".sub-menu a").click(function () {
 
 const offcanvasElementList = document.querySelectorAll('.offcanvas')
 const offcanvasList = [...offcanvasElementList].map(offcanvasEl => new bootstrap.Offcanvas(offcanvasEl))
+
+
+  $(document).ready(function() {
+    $(".date").pDatepicker();
+
+	
+});
+
+  

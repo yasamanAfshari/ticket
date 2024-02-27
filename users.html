@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="Css/update.css">
     <link rel="stylesheet" href="Css/update-responsive.css">
     <link rel="stylesheet" id="switcher-id" href="">
+    <link rel="stylesheet" href="Css/persian-datepicker.css">
 
 </head>
 
@@ -605,12 +606,117 @@
 
                         </div>
                         <div class="col-6 d-flex justify-content-end align-content-center  ">
+
+                            <!-- Button trigger modal -->
+                            <button type="button" class="d-flex justify-content-center align-items-center  btn-register"
+                                data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                ثبت
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static"
+                                data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+
+
+                                            <div class="row ">
+                                                <div class="col-6 ">
+                                                    <div class="form-floating mb-3">
+                                                        <input type="text" class="form-control" id="floatingInput"
+                                                            placeholder="نام" tabindex="1">
+                                                        <label for="floatingInput">نام</label>
+                                                    </div>
+                                                    <div class="form-floating mb-3">
+                                                        <input type="text" class="form-control" id="floatingInput"
+                                                            placeholder="نام کاربری" tabindex="3">
+                                                        <label for="floatingInput">نام کاربری</label>
+                                                    </div>
+                                                    <div class="form-floating mb-3">
+                                                        <input class="form-control" type="file" id="formFile" placeholder="عکس پروفایل" tabindex="5">
+                                                        <label for="floatingInput">عکس پروفایل</label>
+                                                    </div>
+                                                
+                                                    <div class="form-floating mb-3">
+                                                        <input type="text" class="form-control" id="floatingInput"
+                                                            placeholder="کد ملی" tabindex="6">
+                                                        <label for="floatingInput">کد ملی</label>
+                                                    </div>
+                                                    <div class="form-floating mb-3">
+                                                        <input type="text" class="form-control" id="floatingInput"
+                                                            placeholder="شهر" tabindex="8">
+                                                        <label for="floatingInput">شهر</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6 ">
+                                                    <div class="form-floating mb-3">
+                                                        <input type="text" class="form-control" id="floatingInput"
+                                                            placeholder="نام خانوادگی" tabindex="2">
+                                                        <label for="floatingInput">نام خانوادگی</label>
+                                                    </div>
+                                                    <div class="form-floating mb-3">
+                                                        <input type="text" class="form-control" id="floatingInput"
+                                                            placeholder="پسورد" tabindex="4">
+                                                        <label for="floatingInput">پسورد</label>
+                                                    </div>
+                                                    <div class="position-relative select-style mb-3">
+                                                        <select class="form-control"  placeholder="نقش">
+                                                            <option value="...">...</option>
+                                                            <option value="...">...</option>
+                                                            <option value="...">ggg</option>
+                                                            <option value="...">...</option>
+                                                        </select>
+                                                        <label for="" class="select-label ">
+                                                            نقش
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                                                <path fill-rule="evenodd" d="M12.53 16.28a.75.75 0 0 1-1.06 0l-7.5-7.5a.75.75 0 0 1 1.06-1.06L12 14.69l6.97-6.97a.75.75 0 1 1 1.06 1.06l-7.5 7.5Z" clip-rule="evenodd"></path>
+                                                            </svg>
+                                                            </label>
+                                                    </div>
+                                                    <div class="form-floating mb-3">
+                                                        <input type="text" class="form-control date" id="floatingInput"
+                                                            placeholder="تاریخ تولد" tabindex="7">
+                                                        <label for="floatingInput">تاریخ تولد</label>
+                                                    </div>
+                                                    <div class="form-floating mb-3">
+                                                        <input type="text" class="form-control" id="floatingInput"
+                                                            placeholder="آدرس" tabindex="9">
+                                                        <label for="floatingInput">آدرس</label>
+                                                    </div>
+                                                   
+                                                </div>
+
+                                              
+                                            </div>
+
+
+
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button"
+                                                class="d-flex justify-content-center align-items-center  btn-register">ثبت</button>
+                                            <button type="button"
+                                                class=" d-flex justify-content-center align-items-center btn2"
+                                                data-bs-dismiss="modal">بازگشت</button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
 
                     </div>
                     <!-- end box header search -->
 
                     <!-- table -->
+                   
                     <div class="pt-4 table-wrapper table-responsive overflow-x-auto ">
                        
                         <table class="table">
@@ -882,6 +988,8 @@
     <script src="Script/bootstrap.bundle.min.js"></script>
     <script src="Script/theme-switcher.js"></script>
     <script src="Script/mainJS.js"></script>
+    <script src="Script/persian-datepicker.js"></script>
+    <script src="Script/persian-date.min.js"></script>
 </body>
 
 </html>

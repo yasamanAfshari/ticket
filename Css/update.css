@@ -35,6 +35,9 @@
     padding-bottom: 0.625rem;
 
 }
+.form-control[type=file]{
+    height: 45px;
+}
 
 .form-floating {
     color: var(--icon);
@@ -77,6 +80,7 @@ td {
 
 tbody {
     color: var(--icon);
+    vertical-align: middle !important;
 }
 
 .pagination {
@@ -114,7 +118,7 @@ fieldset{
 legend{
     text-align: end;
     float: none;
-    width: 50%;
+    width: 51%;
     font-size: 16px;
     margin-right: 20px;
 
@@ -164,6 +168,38 @@ thead tr{
   td{
     color: var(--icon);
 }
+tr:hover{
+    background-color: var(--main-background);
+}
 .form-control{
     background-color: var(--main-background);
+}
+.select-label{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0px;
+    right: 10px;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    padding: 1rem 0.75rem;
+    overflow: hidden;
+    text-align: start;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    pointer-events: none;
+    border: var(--bs-border-width) solid transparent;
+}
+.select-style{
+    color: var(--icon);
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px 0px rgb(0 0 0 / 5%), -1px -1px 2px 0px rgb(0 0 0 / 5%);
+
+}
+.select-style select{
+    height: 45px;
 }

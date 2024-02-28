@@ -9,7 +9,10 @@
     border-radius: 7px;
     box-shadow: 2px 2px 5px 0px rgb(0 0 0 / 5%), -2px -2px 5px 0px rgb(0 0 0 / 5%);
 }
-
+.container-fluid{
+    padding-left: 20px;
+    padding-right: 20px;
+}
 .form-control {
     font-size: 14px;
 }
@@ -154,10 +157,7 @@ legend{
     border-radius: 10px;
 }
 
-.container-fluid{
-    padding-left: 20px;
-    padding-right: 20px;
-}
+
 .table thead{
    background-color: var(--table-header);
 

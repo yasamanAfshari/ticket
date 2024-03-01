@@ -38,8 +38,9 @@
     padding-bottom: 0.625rem;
 
 }
-.form-control[type=file]{
-    height: 45px;
+.profile-input{
+    height: 45px !important;
+    color: var(--icon);
 }
 
 .form-floating {
@@ -114,9 +115,14 @@ tbody {
     border-radius: 10px;
     box-shadow: 1px 1px 2px 0px rgb(0 0 0 / 5%), -1px -1px 2px 0px rgb(0 0 0 / 5%);
 }
+.formf label{
+    height: 40%;
+}
 fieldset{
-    border: 1px solid lightgray;
+    border: 1px solid  var(--stroke);
     border-radius: 10px;
+    color: var(--main-txt);
+    background-color: var(--main-background);
 }
 legend{
     text-align: end;
@@ -133,6 +139,9 @@ legend{
     border-radius: 7px;
     color: var(--main-txt);
     width: 100px;
+}
+.form-check-label{
+    color: var(--icon);
 }
 .form-check-input:checked{
     background-color: var(--main-color);
@@ -203,6 +212,8 @@ tr:hover{
 }
 .select-style select{
     height: 45px;
+    padding-top: 1.625rem;
+    padding-bottom: 0.625rem;
 }
 a.sort-by {
     padding-right: 18px;
@@ -249,3 +260,7 @@ a.sort-by:after {
 .btn-close:focus{
     box-shadow: none;
 }
+.datepicker-plot-area{
+    background-color: var(--background) !important;
+}
+

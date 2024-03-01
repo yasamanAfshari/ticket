@@ -52,10 +52,22 @@
 
 .form-control:focus {
     color: var(--bs-body-color);
-    background-color: var(--bs-form-control-bg);
+    background-color: var(--background);
     border-color: var(--stroke);
     outline: 0;
-    box-shadow: 0 0 0 0.25rem rgb(255 255 255 / 25%);
+    box-shadow: none;
+}
+input[placeholder-shown], [placeholder]{
+    color: var(--icon) !important;
+}
+input::placeholder{
+    color: var(--icon);
+}
+::placeholder{
+    color: var(--icon);
+}
+.input-group-text{
+    color: var(--icon);
 }
 .select-label{
     display: flex;
@@ -156,19 +168,27 @@
     border-radius: 5px;
     
  }
-
+.status-wrapper{
+    width: 35px;
+    padding-left: 14px !important;
+}
 .status{
-    width: 5%;
+    padding: 3px;
     border-radius: 0px 5px 5px 0;
     text-align: center;
 }
-.ticket-wrapper div:last-child{
-    padding-left: 10px !important;
-    
+.status span{
+    color: var(--txt);
 }
+@media (max-width: 992px) {
+    .ticket-box{
+        height: 420px !important;
+    }
+}
+
 .ticket-box{
     overflow-y: scroll;
-    height: 525px;
+    height: 520px;
     
 }
 .ticket-box::-webkit-scrollbar {
@@ -181,4 +201,7 @@
 .ticket-box::-webkit-scrollbar-thumb {
     background-color: #b5b5b5;
     border-radius: 10px;
+}
+.ticket-detail{
+    color: var(--main-txt);
 }

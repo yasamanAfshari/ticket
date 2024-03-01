@@ -51,10 +51,10 @@
 
 .form-control:focus {
     color: var(--bs-body-color);
-    background-color: var(--bs-form-control-bg);
+    background-color: var(--background);
     border-color: var(--stroke);
     outline: 0;
-    box-shadow: 0 0 0 0.25rem rgb(255 255 255 / 25%);
+    box-shadow: none;
 }
 
 .btn-register {
@@ -173,6 +173,7 @@ tr:hover{
 }
 .form-control{
     background-color: var(--main-background);
+    border: 1px solid var(--stroke);
 }
 .select-label{
     display: flex;
@@ -228,4 +229,23 @@ a.sort-by:before {
 a.sort-by:after {
     border-top-color: #666;
     margin-top: 1px;
+}
+.modal-content{
+    background-color: var(--background);
+}
+.modal-footer{
+    border-top: 1px solid var(--stroke);
+
+}
+.modal-header{
+    border-bottom: 1px solid var(--stroke);
+
+}
+
+.btn-close:hover{
+    color: var(--main-color);
+
+}
+.btn-close:focus{
+    box-shadow: none;
 }

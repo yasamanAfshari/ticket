@@ -15,7 +15,9 @@
     src: url("Font/fonts/AdelleSansARA-Heavy.otf");
 
 }
-
+.small-fs{
+    font-size: 12px;
+}
 
 body {
     background-color: var(--main-background);
@@ -210,5 +212,27 @@ nav ul li a {
     padding: 0;
 }
 .profile-header div{
+    color: var(--main-txt);
+}
+.profile-name {
+    text-decoration: none;
+    color: var(--main-txt);
+}
+.dropdown-menu.show {
+    right: -35px;
+}
+.profile-header .dropdown-menu li:first-child {
+    border-bottom: 2px solid var(--main-color);
+    padding-bottom: 10px;
+}
+.dropdown-menu {
+    background-color: var(--background);
+    color: var(--main-txt);
+}
+.dropdown-menu li a {
+    border-bottom: 1px solid var(--main-color);
+    padding: 7px 15px 7px 15px;
+}
+.dropdown-item{
     color: var(--main-txt);
 }

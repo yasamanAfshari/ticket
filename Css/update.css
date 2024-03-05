@@ -153,6 +153,7 @@ legend{
 }
 .table-wrapper{
     overflow-x: scroll;
+    height: 450px;
 }
 .table-wrapper::-webkit-scrollbar {
 

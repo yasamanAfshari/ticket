@@ -228,11 +228,12 @@ nav ul li a {
 .dropdown-menu {
     background-color: var(--background);
     color: var(--main-txt);
+    width: 30px;
 }
-.dropdown-menu li a {
-    border-bottom: 1px solid var(--main-color);
-    padding: 7px 15px 7px 15px;
+.dropdown-menu li .dropdown-item {
+    border-bottom: 1px solid var(--stroke);
+    padding: 4px 15px 4px 15px;
 }
 .dropdown-item{
-    color: var(--main-txt);
+    color: var(--icon);
 }

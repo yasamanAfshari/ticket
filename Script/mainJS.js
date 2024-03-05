@@ -16,4 +16,27 @@ const offcanvasList = [...offcanvasElementList].map(offcanvasEl => new bootstrap
 	
 });
 
+// $('ul li a').click(function () {
+//   $('a').removeClass('activemenu')
+//   $(this).children('a').addClass('activemenu')
+
+// })
+
+
+
+// license tab
+$(function () {
+  $('ul#tabs-link>li>a').click(function () {
+      $('a.active').removeClass('active')
+      $(this).addClass('active');
+
+      $('.content:visible').hide();
+
+      let selector    =   $(this).attr('href');
+      $(selector).fadeIn(200)
+  });
+
+ 
+})
+
   

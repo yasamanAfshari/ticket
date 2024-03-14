@@ -237,3 +237,6 @@ nav ul li a {
 .dropdown-item{
     color: var(--icon);
 }
+rect{
+    fill: var(--main-color);
+}

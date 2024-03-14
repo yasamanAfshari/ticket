@@ -122,12 +122,13 @@ fieldset{
     border: 1px solid  var(--stroke);
     border-radius: 10px;
     color: var(--main-txt);
-    background-color: var(--main-background);
+    min-height: 289px;
+    
 }
 legend{
     text-align: end;
     float: none;
-    width: 51%;
+    width: 70%;
     font-size: 16px;
     margin-right: 20px;
 
@@ -282,4 +283,51 @@ a.sort-by:after {
    
         text-align: right !important;
 
+}
+.scroll-fieldset{
+    height: 343px;
+    overflow-y: scroll;
+}
+
+.scroll-fieldset::-webkit-scrollbar {
+
+    background-color: var(--bg-color);
+    border-radius: 10px;
+    width: 8px;
+}
+
+.scroll-fieldset::-webkit-scrollbar-thumb {
+    background-color: #b5b5b5;
+    border-radius: 10px;
+}
+
+/* //// */
+a {
+    text-decoration: none;
+    color: var(--main-txt);
+    font-size: 14px;
+}
+
+.treeview {
+    * {
+        margin: .1em;
+        padding: .1em;
+    }
+
+    li {
+        margin-right: 2em;
+        list-style: none;
+        border-right: 1px solid var(--main-color);
+        padding: 2px;
+
+        ul {
+            display: none;
+        }
+    }
+}
+
+.folder {
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
 }

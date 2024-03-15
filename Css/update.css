@@ -158,7 +158,7 @@ legend{
 .table-scroll-wrapper{
     height: 223px;
     overflow-x: scroll;
-    direction: ltr;
+    
 }
 .table-scroll-wrapper::-webkit-scrollbar{
     background-color: var(--bg-color);

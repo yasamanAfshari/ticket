@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="Css/license.css">
     <link rel="stylesheet" href="Css/update-responsive.css">
     <link rel="stylesheet" id="switcher-id" href="">
+    <link rel="stylesheet" href="Css/persian-datepicker.css">
 
 </head>
 
@@ -653,14 +654,14 @@
                             </div>
                             <div class="col-4 col-md-3  p-0  ">
                                 <div class="position-relative select-style">
-                                    <select class="form-control" placeholder="موضوع">
+                                    <select class="form-control" placeholder="نوع نرم افزار">
                                         <option value="...">...</option>
                                         <option value="...">...</option>
                                         <option value="...">ggg</option>
                                         <option value="...">...</option>
                                     </select>
                                     <label for="" class="select-label ">
-                                        موضوع
+                                        نوع نرم افزار
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                             viewBox="0 0 24 24" fill="currentColor">
                                             <path fill-rule="evenodd"
@@ -1235,23 +1236,22 @@
                             </div>
                             <div class="col-6 col-sm-3  p-0 d-flex justify-content-center ">
                                 <div class="form-floating">
-                                    <input type="text" class="form-control" id="floatingInput" placeholder="search">
+                                    
 
-                                    <label for="floatingInput">
-                                        تاریخ انقضا</label>
+                                        <input type="text" class="form-control text-center  ms-0 date-none-txt "
+                                        id="floatingInput" placeholder="تاریخ انقضا">
+                                    <label for="floatingInput" class="opacity-100 ">تاریخ انقضا</label>
                                 </div>
 
                             </div>
                             <div class="col-6 col-sm-3  p-0 d-flex justify-content-center  ">
                                 <div class="form-floating">
-                                    <input type="text" class="form-control" id="floatingInput" placeholder="search">
+                                    
 
-                                    <label for="floatingInput">
-
-
-
-                                        زمان فعالسازی</label>
-                                </div>
+                                    <input type="text" class="form-control text-center  ms-0 date-none-txt "
+                                    id="floatingInput" placeholder="زمان فعالسازی">
+                                <label for="floatingInput" class="opacity-100 ">زمان فعالسازی</label>
+                            </div>
 
                             </div>
 
@@ -1568,7 +1568,7 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <span>لایسنس</span>
+                    <span>کلاینت</span>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
@@ -1646,8 +1646,7 @@
 
                 </div>
                 <div class="modal-footer">
-                    <button type="button"
-                        class="d-flex justify-content-center align-items-center  btn-register">ثبت</button>
+                   
                     <button type="button" class=" d-flex justify-content-center align-items-center btn2"
                         data-bs-dismiss="modal">بازگشت</button>
 
@@ -1764,6 +1763,10 @@
     <script src="Script/bootstrap.bundle.min.js"></script>
     <script src="Script/theme-switcher.js"></script>
     <script src="Script/mainJS.js"></script>
+   
+    
+    <script src="Script/persian-datepicker.js"></script>
+    <script src="Script/persian-date.min.js"></script>
 </body>
 
 </html>

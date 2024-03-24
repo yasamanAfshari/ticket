@@ -9,4 +9,6 @@
     --table-header:#eeeeee;
     --ticket-box:#F8F8F8;
     --gradient:linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(23,48,64,1) 52%, rgba(255,255,255,0) 100%);
+    --chat-me: #eceff1;
+    --chat-you:#3a5d73;
 }

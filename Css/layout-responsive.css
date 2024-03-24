@@ -24,10 +24,7 @@
     .header-txt{
         font-size: 12px;
     }
-    .sub-menu{
-        display: flex;
-        justify-content: center;
-    }
+    
 }
 @media (max-width: 768px) {
     

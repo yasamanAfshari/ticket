@@ -1,5 +1,5 @@
 :root{
-    --main-background:#363738;
+    --main-background:#303030;
     --icon:#c8c8c8;
     --background: #262728;
     --main-txt: #d1d1d1;
@@ -9,4 +9,6 @@
     --table-header:#4b4b4b;
     --ticket-box:#363738;
     --gradient:linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(23,48,64,1) 52%, rgba(255,255,255,0) 100%);
+    --chat-me:#929292;
+    --chat-you: #18242b;
 }

@@ -286,3 +286,6 @@ a.sort-by:after {
 .profile-user{
     width: 15%;
 }
+.selected-profile-image{
+    display: none;
+}

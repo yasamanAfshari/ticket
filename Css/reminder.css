@@ -291,3 +291,12 @@ a.sort-by:after {
 
 max-width: 700px !important;
 }}
+table .btn-register {
+    height: 30px;
+    font-size: 14px;
+    background-color: var(--main-color);
+    border: none;
+    border-radius: 7px;
+    color: var(--txt);
+    width: 85px;
+}

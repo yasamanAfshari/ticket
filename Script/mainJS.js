@@ -39,7 +39,6 @@ const offcanvasList = [...offcanvasElementList].map(offcanvasEl => new bootstrap
 
 
 
-
 // $('ul li a').click(function () {
 //   $('a').removeClass('activemenu')
 //   $(this).children('a').addClass('activemenu')

@@ -30,14 +30,13 @@
         justify-content: center;
     }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     
     .header-txt{
         font-size: 14px;
     }
     .sub-menu{
-        display: flex;
-        justify-content: flex-end;
+        display: block;
     }
     .sidebar-wrapper{
         width: 25%;

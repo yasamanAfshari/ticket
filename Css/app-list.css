@@ -122,7 +122,6 @@ fieldset{
     border: 1px solid  var(--stroke);
     border-radius: 10px;
     color: var(--main-txt);
-    background-color: var(--main-background);
 }
 legend{
     text-align: end;
@@ -289,3 +288,169 @@ a.sort-by:after {
 .selected-profile-image{
     display: none;
 }
+.table th, .table tr, td{
+    text-align: right;
+}
+.table-wrapper{
+    width: 20%;
+}
+.title h5 {
+    font-family: "adellBold";
+    color: var(--main-txt);
+}
+
+.box-wrapper {
+    min-height: 100px;
+    background-color: var(--background);
+    border-radius: 7px;
+    box-shadow: 2px 2px 5px 0px rgb(0 0 0 / 5%), -2px -2px 5px 0px rgb(0 0 0 / 5%);
+}
+.container-fluid{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+.form-floating>label {
+    display: flex;
+    align-items: center;
+    top: 0px;
+    right: 10px;
+    padding: 0;
+}
+
+.form-floating>.form-control,
+.form-floating>.form-control-plaintext {
+    padding: 7px;
+}
+
+.form-floating>.form-control,
+.form-floating>.form-control-plaintext,
+.form-floating>.form-select {
+    height: 35px;
+    padding-top: 1.625rem;
+    padding-bottom: 0.625rem;
+
+}
+/* .profile-input{
+    height: 45px !important;
+    color: var(--icon);
+} */
+
+.modal .form-floating {
+    color: var(--icon);
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px 0px rgb(0 0 0 / 5%), -1px -1px 2px 0px rgb(0 0 0 / 5%);
+}
+
+.form-control:focus {
+    color: var(--bs-body-color);
+    background-color: var(--background);
+    border-color: var(--stroke);
+    outline: 0;
+    box-shadow: none;
+}
+
+.btn-register {
+    height: 35px;
+    background-color: var(--main-color);
+    border: none;
+    border-radius: 7px;
+    color: var(--txt);
+    width: 120px;
+}
+
+
+.formf{
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px 0px rgb(0 0 0 / 5%), -1px -1px 2px 0px rgb(0 0 0 / 5%);
+}
+.formf label{
+    height: 40%;
+}
+fieldset{
+    border: 1px solid  var(--stroke);
+    border-radius: 10px;
+    min-height: 190px;
+    color: var(--main-txt);
+}
+legend{
+    text-align: end;
+    float: none;
+    width: 28%;
+    font-size: 16px;
+    margin-right: 20px;
+
+}
+
+.btn2{
+    border: 1px solid var(--main-color);
+    height: 35px;
+    background-color: var(--background);
+    border-radius: 7px;
+    color: var(--main-txt);
+    width: 100px;
+}
+.form-check-label{
+    color: var(--icon);
+}
+.form-check-input:checked{
+    background-color: var(--main-color);
+    border: none;
+}
+.form-check-input:focus{
+    box-shadow: none;
+    border-color: var(--main-color);
+}
+
+.form-control{
+    background-color: var(--main-background);
+    border: 1px solid var(--stroke);
+    font-size: 14px;
+}
+.select-label{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0px;
+    right: 10px;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    padding: 1rem 0.75rem;
+    overflow: hidden;
+    text-align: start;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    pointer-events: none;
+    border: var(--bs-border-width) solid transparent;
+}
+.select-style{
+    color: var(--icon);
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px 0px rgb(0 0 0 / 5%), -1px -1px 2px 0px rgb(0 0 0 / 5%);
+
+}
+.select-style select{
+    height: 45px;
+    padding-top: 1.625rem;
+    padding-bottom: 0.625rem;
+}
+
+
+.btn-close:hover{
+    color: var(--main-color);
+
+}
+.btn-close:focus{
+    box-shadow: none;
+}
+.form-legend{
+    width: 70%;
+}
+
+

@@ -13,4 +13,7 @@
     --chat-you:#3a5d73;
     --chat-you-time:#c1c1c1;
     --chat-me-time:#3b3b3b;
+    --line:  linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(23, 48, 64, 1) 52%, rgba(255, 255, 255, 0) 100%);
+    --acc-color: linear-gradient(50deg, rgb(47 100 139) 0%, rgb(23 48 64) 100%);
+   
 }

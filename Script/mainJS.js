@@ -83,3 +83,22 @@ jQuery.fn.center = function () {
   return this;
 }
 
+
+//accordion
+$(function () {
+          
+
+  $('.acc-title').click(function () {
+      $('.acc-title').children().removeClass('fa-angle-up')
+
+      if ($(this).next().is(':visible')) {
+          $(this).children().removeClass('fa-angle-up')
+      } else {
+          $(this).children().addClass('fa-angle-up')
+      }
+
+      $(this).next().slideToggle(500).siblings('.acc-content').slideUp()
+  })
+
+ 
+})

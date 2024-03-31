@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="Css/layout.css">
+    <link rel="stylesheet" href="Css/Font/css/fontawesome.css">
+    <link rel="stylesheet" href="Css/Font/css/solid.css">
+    <link rel="stylesheet" href="Css/Font/regular.css">
+    <style>
+        #accordion {
+            /* border: 1px solid black;*/
+            min-height: 200px;
+            padding: 10px;
+        }
+
+        .acc-title {
+            background: rgb(11, 120, 202);
+            background: linear-gradient(50deg, rgba(11, 120, 202, 1) 0%, rgba(0, 91, 158, 1) 100%);
+            border-radius: 10px;
+            padding: 12px;
+            color: white;
+            cursor: pointer;
+            margin: 10px 0;
+        }
+
+        .acc-content {
+            padding: 5px 12px;
+            border-right: 1px solid lightgray;
+            line-height: 2;
+            color: #434343;
+            font-size: 14px;
+            display: none;
+        }
+
+        .acc-title>.fa-solid {
+            float: left;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="accordion">
+        <div class="acc-title">
+            آیا دوره ها پروژه محور هستند ؟
+            <i class="fa-solid fa-angle-down"></i>
+        </div>
+        <div class="acc-content">
+            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون
+            بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است،
+        </div>
+
+        <div class="acc-title">
+            زمان بندی کلاس ها به چه صورت انجام می شود؟
+            <i class="fa-solid fa-angle-down"></i>
+
+        </div>
+        <div class="acc-content">
+            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون
+            بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است،
+        </div>
+        <div class="acc-title">
+            آیا امکان معرفی به بازار کار پس از دوره وجود دارد ؟
+            <i class="fa-solid fa-angle-down"></i>
+
+        </div>
+        <div class="acc-content">
+            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون
+            بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است،
+        </div>
+        <div class="acc-title">
+            آیا پس از پایان دوره می توانم مدرک بگیرم ؟
+            <i class="fa-solid fa-angle-down"></i>
+
+        </div>
+        <div class="acc-content">
+            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون
+            بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است،
+        </div>
+    </div>
+    <script src="Script/jquery-3.6.1.min.js"></script>
+    <script>
+        $(function () {
+          
+
+            $('.acc-title').click(function () {
+                $('.acc-title').children().removeClass('fa-angle-up')
+
+                if ($(this).next().is(':visible')) {
+                    $(this).children().removeClass('fa-angle-up')
+                } else {
+                    $(this).children().addClass('fa-angle-up')
+                }
+
+                $(this).next().slideToggle(500).siblings('.acc-content').slideUp()
+            })
+
+           
+        })
+
+    </script>
+</body>
+
+</html>

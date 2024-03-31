@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>new ticket</title>
     <link rel="stylesheet" href="Css/bootstrap.rtl.min.css">
     <link rel="stylesheet" href="Css/layout.css">
     <link rel="stylesheet" href="Css/Font/css/fontawesome.css">
@@ -12,7 +12,9 @@
     <link rel="stylesheet" href="Css/Font/regular.css">
     <link rel="stylesheet" href="Css/btn.css">
     <link rel="stylesheet" href="Css/layout-responsive.css">
+    <link rel="stylesheet" href="Css/register-ticket-user.css">
     <link rel="stylesheet" id="switcher-id" href="">
+    <link rel="stylesheet" href="Css/persian-datepicker.css">
 
 </head>
 
@@ -48,7 +50,6 @@
                                     <div class="col-2 sidebar-wrapper ">
                                         <nav class='animated bounceInDown'>
 
-                                           
                                             <div class="">
 
                                                 <div class="text-sidebar-wrapper mt-3">
@@ -69,7 +70,7 @@
                                             <div class="line"></div>
                                             <ul>
                                                 <li>
-                                                    <a href='#'
+                                                    <a href='register-ticket-user.html'
                                                         >
                                                         <span> ثبت تیکت</span>
                                                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
@@ -87,7 +88,7 @@
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <a href='#'
+                                                    <a href='ticket-list-user.html'
                                                         >
                                                         <span> لیست تیکت ها</span>
                                                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
@@ -181,9 +182,10 @@
 
 
 
-    <div class="row w-100 ">
-        <!-- sidebar -->
-        <div class="col-2 d-none d-md-inline ">
+
+    <div class="row-cols-auto  w-100 d-flex justify-content-center  ">
+         <!-- sidebar -->
+         <div class="col-2 d-none d-md-inline ">
             <div class="sidebar-wrapper  ">
                 <nav class='animated bounceInDown'>
                     <div class="">
@@ -206,7 +208,7 @@
                     <div class="line"></div>
                     <ul>
                         <li>
-                            <a href='#'
+                            <a href='register-ticket-user.html'
                                 class="flex-lg-row justify-content-lg-end justify-content-center flex-column-reverse align-items-center   ">
                                 <span class="d-lg-flex d-none  "> ثبت تیکت</span>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
@@ -224,7 +226,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href='#'
+                            <a href='ticket-list-user.html'
                                 class="flex-lg-row justify-content-lg-end justify-content-center flex-column-reverse align-items-center   ">
                                 <span class="d-lg-flex d-none  "> لیست تیکت ها</span>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
@@ -249,15 +251,190 @@
         </div>
 
 
+
         <!-- main content -->
-        <div class="col-10 ">
-            
+        <div class="col-12 col-md-10 ">
+            <div class="container-fluid   ">
+                
+                <div class="title mt-2 ">
+                    <h5>تیکت جدید</h5>
+                </div>
+                <div class=" row ">
+                    <div class="box-wrapper col-xl-5 col-md-6  d-flex pt-3 pb-3  justify-content-center">
+                        <form action="#" class="form-legend">
+                            <fieldset class="p-2">
+                                <legend>ثبت تیکت</legend>
+                                <div class="position-relative select-style mb-3">
+                                    <select class="form-control" placeholder="موضوع" tabindex="1">
+                                        <option value="...">...</option>
+                                        <option value="...">...</option>
+                                        <option value="...">ggg</option>
+                                        <option value="...">...</option>
+                                    </select>
+                                    <label for="" class="select-label ">
+                                        موضوع
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                            viewBox="0 0 24 24" fill="currentColor">
+                                            <path fill-rule="evenodd"
+                                                d="M12.53 16.28a.75.75 0 0 1-1.06 0l-7.5-7.5a.75.75 0 0 1 1.06-1.06L12 14.69l6.97-6.97a.75.75 0 1 1 1.06 1.06l-7.5 7.5Z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+                                    </label>
+                                </div>
+                                <div class="position-relative select-style mb-3">
+                                    <select class="form-control" placeholder="موضوع فرعی" tabindex="2">
+                                        <option value="...">...</option>
+                                        <option value="...">...</option>
+                                        <option value="...">ggg</option>
+                                        <option value="...">...</option>
+                                    </select>
+                                    <label for="" class="select-label ">
+                                        موضوع فرعی
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                            viewBox="0 0 24 24" fill="currentColor">
+                                            <path fill-rule="evenodd"
+                                                d="M12.53 16.28a.75.75 0 0 1-1.06 0l-7.5-7.5a.75.75 0 0 1 1.06-1.06L12 14.69l6.97-6.97a.75.75 0 1 1 1.06 1.06l-7.5 7.5Z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+                                    </label>
+                                </div>
+                                <div class="form-floating mb-3 ">
+                                    <input type="number" class="form-control" id="floatingInput" placeholder="نام کاربر"
+                                        dir="rtl" tabindex="3">
+
+                                    <label for="floatingInput">
+
+
+                                        ترتیب
+                                    </label>
+                                </div>
+                                <div class="form-floating mb-3 ">
+                                    <input type="text" class="form-control" id="floatingInput" placeholder="topic" tabindex="4">
+
+                                    <label for="floatingInput">
+                                        عنوان</label>
+                                </div>
+                                <div class="form-floating  mb-3 ">
+                                    <label for="floatingInput" style="top: -48px !important;">شرح</label>
+                                    <textarea class="form-control h-50 " placeholder="شرح" id="floatingInput" rows="5" tabindex="5">
+                                       </textarea>
+
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input class="form-control profile-input" type="file" id="formFile"
+                                        placeholder="پیوست" tabindex="6">
+                                    <label for="floatingInput" class="opacity-100 ">
+                                        پیوست</label>
+
+                                </div>
+                                <img id="selected-profile-image" src="#" alt="your image"
+                                    class="selected-profile-image">
+
+
+
+                            </fieldset>
+
+                            <div class="d-flex justify-content-center  mt-4 ">
+                                <button type="button"
+                                    class="d-flex justify-content-center align-items-center  btn-register">ثبت</button>
+
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-xl-7 col-md-6  ">
+                        <div class="title mb-0  ">
+                            <h5>سوالات متداول</h5>
+                        </div>
+                        <div id="accordion">
+                            <div class="acc-title">
+                                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است؟
+                                <i class="fa-solid fa-angle-down"></i>
+                            </div>
+                            <div class="acc-content">
+                                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون
+                                بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است،
+                            </div>
+                            
+                            <div class="acc-title">
+                                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است؟
+                                <i class="fa-solid fa-angle-down"></i>
+                            </div>
+                            <div class="acc-content">
+                                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون
+                                بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است،
+                            </div>
+
+                            <div class="acc-title">
+                                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است؟
+                                <i class="fa-solid fa-angle-down"></i>
+                            </div>
+                            <div class="acc-content">
+                                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون
+                                بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است،
+                            </div>
+
+                            <div class="acc-title">
+                                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است؟
+                                <i class="fa-solid fa-angle-down"></i>
+                            </div>
+                            <div class="acc-content">
+                                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون
+                                بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است،
+                            </div>
+
+                            <div class="acc-title">
+                                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است؟
+                                <i class="fa-solid fa-angle-down"></i>
+                            </div>
+                            <div class="acc-content">
+                                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون
+                                بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است،
+                            </div>
+
+                            <div class="acc-title">
+                                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است؟
+                                <i class="fa-solid fa-angle-down"></i>
+                            </div>
+                            <div class="acc-content">
+                                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون
+                                بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است،
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
+    </div>
+
+
     </div>
     <script src="Script/jquery-3.6.1.min.js"></script>
     <script src="Script/bootstrap.bundle.min.js"></script>
     <script src="Script/theme-switcher.js"></script>
     <script src="Script/mainJS.js"></script>
+    <script src="Script/persian-datepicker.js"></script>
+    <script src="Script/persian-date.min.js"></script>
+    <script>
+
+        document.querySelector('.profile-input').addEventListener('change', function () {
+            if (this.files && this.files[0]) {
+                const reader = new FileReader();
+
+                reader.onload = function (e) {
+                    $('#selected-profile-image')
+                        .attr('src', e.target.result)
+                        .width(200)
+                        .height(200)
+                        .css('display', 'inline');
+                };
+
+                reader.readAsDataURL(this.files[0]);
+            }
+        })
+
+    </script>
+
 </body>
 
 </html>

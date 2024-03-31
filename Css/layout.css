@@ -144,7 +144,7 @@ nav ul li a {
     border: 1px solid var(--stroke);
     margin: 10px 0px 10px 0px;
 }
-
+/* 
 .circle-wrapper {
     height: 15%;
     width: 100%;
@@ -163,7 +163,7 @@ nav ul li a {
     background-color: var(--main-color);
     border-radius: 100%;
 
-}
+} */
 
 .text-sidebar-wrapper {
     z-index: 2;
@@ -176,12 +176,12 @@ nav ul li a {
 .text-sidebar-wrapper h5 {
     font-family: "adell";
     font-weight: bolder;
-    color: white;
+    color: var(--main-txt);
 
 }
 
 .text-sidebar-wrapper h6 {
-    color: white;
+    color: var(--main-txt);
 }
 
 .g-line {
@@ -189,7 +189,7 @@ nav ul li a {
     height: 2px;
     display: flex;
     background: rgb(255, 255, 255);
-    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(23, 48, 64, 1) 52%, rgba(255, 255, 255, 0) 100%);
+    background: var(--line);
     margin: 10px 0 10px 0;
 }
 

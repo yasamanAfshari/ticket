@@ -151,9 +151,20 @@ legend{
     box-shadow: none;
     border-color: var(--main-color);
 }
-.table-wrapper{
-    overflow-x: scroll;
+.table-wrapper {
+
     height: 450px;
+}
+
+.table-wrapper table thead {
+    position: sticky;
+    top: -1px;
+    z-index: 10;
+}
+.table-wrapper table tbody{
+    overflow: scroll;
+    height: 200px;
+
 }
 .table-scroll-wrapper{
     height: 223px;
@@ -175,6 +186,7 @@ legend{
 
     background-color: var(--bg-color);
     border-radius: 10px;
+    width: 8px;
     height: 8px;
 }
 
@@ -299,4 +311,38 @@ table .btn-register {
     border-radius: 7px;
     color: var(--txt);
     width: 85px;
+}
+.zp-tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+/* Tooltip text */
+.zp-tooltip .tooltiptext {
+    visibility: hidden;
+    font-size: 14px;
+    width: max-content;
+   
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 10px;
+    z-index: 1080;
+    position: absolute;
+    top: -5px;
+    left:200%;
+    transform: translateX(-50%);
+    opacity: 0;
+    
+    transition: opacity 0.3s; background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Show the tooltip text when hovering */
+.zp-tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+    z-index: 1080;
+}
+.form-control:focus .form-floating>label {
+    font-size: 5px !important;
 }

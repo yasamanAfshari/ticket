@@ -240,3 +240,6 @@ nav ul li a {
 rect{
     fill: var(--main-color);
 }
+.form-floating label svg{
+    margin-left: 10px;
+}

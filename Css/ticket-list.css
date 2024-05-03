@@ -120,7 +120,8 @@ input::placeholder {
 .select-style {
     width: 90%;
     color: var(--icon);
-    border-radius: 10px;
+    border-radius: 6px;
+    background-color: var(--main-background);
     box-shadow: 1px 1px 2px 0px rgb(0 0 0 / 5%), -1px -1px 2px 0px rgb(0 0 0 / 5%);
 
 }
@@ -209,7 +210,7 @@ input::placeholder {
 }
 
 .form-check-input:checked {
-    background-color: var(--main-color);
+    background-color: var(--main-color) !important;
 }
 
 .ticket-wrapper {
@@ -223,6 +224,14 @@ input::placeholder {
 .status-wrapper {
     width: 32px;
 
+}
+@media (max-width: 576px) {
+    .status-wrapper{
+        width: 0;
+    }
+    .status{
+        padding: 1px !important;
+    }
 }
 
 .status {
@@ -295,3 +304,6 @@ input::placeholder {
     z-index: 1080;
 }
 
+.select-style{
+    border: 1px solid var(--stroke);
+}

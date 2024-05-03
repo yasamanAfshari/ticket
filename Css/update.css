@@ -44,6 +44,8 @@
 .profile-input {
     height: 45px !important;
     color: var(--icon);
+    background-color: var(--main-background);
+    border: 1px solid var(--stroke);
 }
 
 .form-floating {
@@ -165,22 +167,25 @@ legend {
     box-shadow: none;
     border-color: var(--main-color);
 }
-
+.table-responsive {
+  
+    overflow: scroll;
+}
 .table-wrapper {
 
-    height: 450px;
+    max-height: 350px;
 }
 
 .table-wrapper table thead {
     position: sticky;
     top: -1px;
-    z-index: 10;
+    z-index: 3;
 }
-.table-wrapper table tbody{
+/* .table-wrapper table tbody{
     overflow: scroll;
     height: 200px;
 
-}
+} */
 .table-scroll-wrapper {
     height: 223px;
     overflow-x: scroll;

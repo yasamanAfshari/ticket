@@ -4,9 +4,10 @@ a {
     font-size: 14px;
 }
 .treeview {
-    height: 588px;
+    min-height: 400px;
     overflow-x: scroll;
     direction: ltr;
+    color: var(--main-txt);
     * {
         margin: .1em;
         padding: .1em;

@@ -22,7 +22,7 @@
 
 <body>
     <header id="page-header">
-        <div class="container-fluid w-100 pt-0 pb-0 top-header">
+        <div class=" w-100 pt-0 pb-0 top-header">
             <div class=" w-100 row">
                 <div class="col-7 d-flex ">
                     <div class="row d-flex align-items-center w-100">
@@ -49,6 +49,19 @@
 
                                 <!-- sidebar menue in mobile -->
                                 <div class="offcanvas-body">
+                                    <div class=" d-flex  ">
+                                        <label class="switch">
+                                            <span class="switch__icon switch__icon--light">
+                                                <i class="fas fa-solid fa-sun"></i>
+                                            </span>
+                                            <input class="switch__input" id="switch_input_mobile" type="checkbox" role="switch"
+                                                onchange="onChangeTheme()" />
+                                            <span class="switch__icon switch__icon--dark">
+                                                <i class="fa-solid fa-moon"></i>
+                                            </span>
+                                        </label>
+                                    </div>
+                                    <div class="line"></div>
                                     <div class="col-2 sidebar-wrapper ">
                                         <nav class='animated bounceInDown'>
 
@@ -57,13 +70,16 @@
 
                                                     <a href='#'
                                                         class="flex-lg-row justify-content-lg-end align-items-center ">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
-                                                            viewBox="0 0 24 24" fill="currentColor">
-                                                            <path fill-rule="evenodd"
-                                                                d="M12.53 16.28a.75.75 0 0 1-1.06 0l-7.5-7.5a.75.75 0 0 1 1.06-1.06L12 14.69l6.97-6.97a.75.75 0 1 1 1.06 1.06l-7.5 7.5Z"
-                                                                clip-rule="evenodd" />
-                                                        </svg>
-                                                        <span>تیکت</span>
+                                                        <div class="w-100 d-flex justify-content-between ">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="18"
+                                                                height="18" viewBox="0 0 24 24" fill="currentColor">
+                                                                <path fill-rule="evenodd"
+                                                                    d="M12.53 16.28a.75.75 0 0 1-1.06 0l-7.5-7.5a.75.75 0 0 1 1.06-1.06L12 14.69l6.97-6.97a.75.75 0 1 1 1.06 1.06l-7.5 7.5Z"
+                                                                    clip-rule="evenodd" />
+                                                            </svg>
+                                                            <span>تیکت</span>
+                                                        </div>
+
                                                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
                                                             viewBox="0 0 24 24" fill="currentColor">
                                                             <path
@@ -114,14 +130,17 @@
                                                 <li class='sub-menu'>
                                                     <a href='#'
                                                         class="flex-lg-row justify-content-lg-end align-items-center ">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
-                                                            viewBox="0 0 24 24" fill="currentColor">
-                                                            <path fill-rule="evenodd"
-                                                                d="M12.53 16.28a.75.75 0 0 1-1.06 0l-7.5-7.5a.75.75 0 0 1 1.06-1.06L12 14.69l6.97-6.97a.75.75 0 1 1 1.06 1.06l-7.5 7.5Z"
-                                                                clip-rule="evenodd" />
-                                                        </svg>
+                                                        <div class="w-100 d-flex justify-content-between ">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="18"
+                                                                height="18" viewBox="0 0 24 24" fill="currentColor">
+                                                                <path fill-rule="evenodd"
+                                                                    d="M12.53 16.28a.75.75 0 0 1-1.06 0l-7.5-7.5a.75.75 0 0 1 1.06-1.06L12 14.69l6.97-6.97a.75.75 0 1 1 1.06 1.06l-7.5 7.5Z"
+                                                                    clip-rule="evenodd" />
+                                                            </svg>
 
-                                                        <span>کاربران</span>
+                                                            <span>کاربران</span>
+                                                        </div>
+
 
                                                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
                                                             viewBox="0 0 24 24" fill="currentColor">
@@ -232,13 +251,16 @@
                                                 <li class='sub-menu '>
                                                     <a href='#'
                                                         class="flex-lg-row justify-content-lg-end align-items-center ">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
-                                                            viewBox="0 0 24 24" fill="currentColor">
-                                                            <path fill-rule="evenodd"
-                                                                d="M12.53 16.28a.75.75 0 0 1-1.06 0l-7.5-7.5a.75.75 0 0 1 1.06-1.06L12 14.69l6.97-6.97a.75.75 0 1 1 1.06 1.06l-7.5 7.5Z"
-                                                                clip-rule="evenodd" />
-                                                        </svg>
-                                                        <span>نرم افزار</span>
+                                                        <div class="w-100 d-flex justify-content-between ">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="18"
+                                                                height="18" viewBox="0 0 24 24" fill="currentColor">
+                                                                <path fill-rule="evenodd"
+                                                                    d="M12.53 16.28a.75.75 0 0 1-1.06 0l-7.5-7.5a.75.75 0 0 1 1.06-1.06L12 14.69l6.97-6.97a.75.75 0 1 1 1.06 1.06l-7.5 7.5Z"
+                                                                    clip-rule="evenodd" />
+                                                            </svg>
+                                                            <span>نرم افزار</span>
+                                                        </div>
+
                                                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
                                                             viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
                                                             <path fill-rule="evenodd"
@@ -340,7 +362,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class=" d-flex">
+                        <div class=" d-md-flex d-none ">
                             <label class="switch">
                                 <span class="switch__icon switch__icon--light">
                                     <i class="fas fa-solid fa-sun"></i>
@@ -359,6 +381,7 @@
         </div>
 
     </header>
+
 
 
 
@@ -614,8 +637,8 @@
                 <div class="content" id="license">
                     <div class="box-wrapper row d-flex justify-content-center p-2  ">
                         <!-- box header search -->
-                        <div class="search-wrapper row w-100 d-flex align-content-center pt-2 ">
-                            <div class="col-4 col-md-3  p-0 ">
+                        <div class="search-wrapper row w-100 d-flex align-content-center align-items-center  pt-2 ">
+                            <div class="col-6 d-flex justify-content-center  col-sm-5 col-md-3  p-0 ">
                                 <div class="form-floating">
                                     <input type="text" class="form-control" id="floatingInput" placeholder="search">
 
@@ -631,7 +654,7 @@
                                 </div>
 
                             </div>
-                            <div class="col-4 col-md-3  p-0  ">
+                            <div class="col-6 d-flex justify-content-center  col-sm-5 col-md-3  p-0  ">
                                 <div class="position-relative select-style">
                                     <select class="form-control" placeholder="نوع نرم افزار">
                                         <option value="...">...</option>
@@ -650,7 +673,7 @@
                                     </label>
                                 </div>
                             </div>
-                            <div class="col-4 col-md-6  d-flex justify-content-end align-content-center  ">
+                            <div class="col-12 pt-2 pt-md-0  col-sm-2 col-md-6  d-flex justify-content-end align-content-center  ">
 
                                 <!-- Button trigger modal -->
                                 <button type="button"
@@ -749,11 +772,11 @@
                         <!-- end box header search -->
 
                         <!-- table -->
-                        <div class="mt-4 pe-0 ps-0  table-wrapper table-responsive overflow-x-auto ">
-                            <table class="table ">
+                        <div class="mt-4 pe-0 ps-0  table-wrapper  overflow-x-auto ">
+                            <table class="table table-responsive">
                                 <thead>
                                     <tr>
-                                        <th scope="col">#</th>
+                                        <th scope="col" class="col-1 ">#</th>
                                         <th scope="col">نوع نرم افزار</th>
                                         <th scope="col">کد لایسنس</th>
                                         <th scope="col">نسخه وب</th>
@@ -761,7 +784,7 @@
                                         <th scope="col">وضعیت</th>
                                         <th scope="col">ثبت کننده</th>
                                         <th scope="col">زمان ثبت</th>
-                                        <th scope="col"></th>
+                                        <th scope="col" class="col-1 "></th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -1338,18 +1361,18 @@
                         <!-- end box header search -->
 
                         <!-- table -->
-                        <div class="mt-4 pe-0  table-wrapper table-responsive overflow-x-auto ">
-                            <table class="table ">
+                        <div class="mt-4 pe-0  table-wrapper overflow-x-auto ">
+                            <table class="table table-responsive">
                                 <thead>
                                     <tr>
-                                        <th scope="col">#</th>
+                                        <th scope="col" class="col-1 ">#</th>
                                         <th scope="col">مشتری</th>
                                         <th scope="col">کد لایسنس</th>
                                         <th scope="col">زمان فعالسازی</th>
                                         <th scope="col">تاریخ انقضای لایسنس</th>
                                         <th scope="col">کد سیستمی</th>
                                         <th scope="col">کد دستگاه</th>
-                                        <th scope="col"></th>
+                                        <th scope="col" class="col-1 "></th>
                                     </tr>
                                 </thead>
                                 <tbody>

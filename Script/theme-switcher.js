@@ -31,3 +31,4 @@
         document.getElementById("switcher-id").href = "Css/dark-color.css";
     }
     }
+

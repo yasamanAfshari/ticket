@@ -151,20 +151,20 @@ legend{
     box-shadow: none;
     border-color: var(--main-color);
 }
-.table-wrapper {
 
-    height: 450px;
-}
 
 .table-wrapper table thead {
     position: sticky;
     top: -1px;
-    z-index: 10;
+    z-index: 3;
 }
-.table-wrapper table tbody{
+.table-responsive{
     overflow: scroll;
-    height: 200px;
 
+}
+.table-wrapper {
+
+    max-height: 350px;
 }
 .table-scroll-wrapper{
     height: 223px;
@@ -198,6 +198,10 @@ legend{
 
 .table thead{
    background-color: var(--table-header);
+   position: sticky;
+   top: -1px;
+   z-index: 3;
+
 
 }
 thead tr{

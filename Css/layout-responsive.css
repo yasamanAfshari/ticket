@@ -39,12 +39,12 @@
         display: block;
     }
     .sidebar-wrapper{
-        width: 25%;
+        width: 35%;
     }
 }
 @media (max-width: 576px) {
     .sidebar-wrapper{
-        width: 40%;
+        width: 53%;
     }
     .navbar-brand img {
         width: 25%;

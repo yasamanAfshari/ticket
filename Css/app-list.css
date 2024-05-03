@@ -150,10 +150,7 @@ legend{
     box-shadow: none;
     border-color: var(--main-color);
 }
-.table-wrapper{
-    overflow-x: scroll;
-    height: 450px;
-}
+
 .table-scroll-wrapper{
     height: 223px;
     overflow-x: scroll;
@@ -173,7 +170,7 @@ legend{
 
     background-color: var(--bg-color);
     border-radius: 10px;
-    height: 8px;
+    width: 8px;
 }
 
 .table-wrapper::-webkit-scrollbar-thumb {
@@ -184,6 +181,10 @@ legend{
 
 .table thead{
    background-color: var(--table-header);
+   position: sticky;
+   top: -1px;
+   z-index: 3;
+
 
 }
 thead tr{
@@ -292,7 +293,11 @@ a.sort-by:after {
     text-align: right;
 }
 .table-wrapper{
-    width: 20%;
+    width: 30%;
+    max-height: 250px;
+}
+.table-responsive{
+    overflow: scroll;
 }
 .title h5 {
     font-family: "adellBold";
@@ -378,7 +383,7 @@ fieldset{
 legend{
     text-align: end;
     float: none;
-    width: 28%;
+    width: auto;
     font-size: 16px;
     margin-right: 20px;
 

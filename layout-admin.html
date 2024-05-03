@@ -13,90 +13,134 @@
     <link rel="stylesheet" href="Css/btn.css">
     <link rel="stylesheet" href="Css/layout-responsive.css">
     <link rel="stylesheet" id="switcher-id" href="">
+    
 
 </head>
 
 <body>
     <header id="page-header">
-        <div class="container-fluid w-100 pt-0 pb-0 top-header">
+        <div class=" w-100 pt-0 pb-0 top-header">
             <div class=" w-100 row">
                 <div class="col-7 d-flex ">
                     <div class="row d-flex align-items-center w-100">
                         <div class="col-2 d-inline d-md-none ">
-                            <a  data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
-                              </a>
-                              
-                              
-                              <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                            <a data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                                aria-controls="offcanvasExample">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-menu">
+                                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                                </svg>
+                            </a>
+
+
+                            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+                                aria-labelledby="offcanvasExampleLabel">
                                 <div class="offcanvas-header">
-                                  
-                                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+
+                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                        aria-label="Close"></button>
                                 </div>
 
-                                 <!-- sidebar menue in mobile -->
-                                 <div class="offcanvas-body">
+                                <!-- sidebar menue in mobile -->
+                                <div class="offcanvas-body">
+                                    <div class=" d-flex  ">
+                                        <label class="switch">
+                                            <span class="switch__icon switch__icon--light">
+                                                <i class="fas fa-solid fa-sun"></i>
+                                            </span>
+                                            <input class="switch__input" id="switch_input_mobile" type="checkbox" role="switch"
+                                                onchange="onChangeTheme()" />
+                                            <span class="switch__icon switch__icon--dark">
+                                                <i class="fa-solid fa-moon"></i>
+                                            </span>
+                                        </label>
+                                    </div>
+                                    <div class="line"></div>
                                     <div class="col-2 sidebar-wrapper ">
                                         <nav class='animated bounceInDown'>
-                                    
+
                                             <ul>
                                                 <li class='sub-menu'>
-                                                  
-                                                        <a href='#' class="flex-lg-row justify-content-lg-end align-items-center ">
-                                                            <svg xmlns="http://www.w3.org/2000/svg"  width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+
+                                                    <a href='#'
+                                                        class="flex-lg-row justify-content-lg-end align-items-center ">
+                                                        <div class="w-100 d-flex justify-content-between ">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="18"
+                                                                height="18" viewBox="0 0 24 24" fill="currentColor">
                                                                 <path fill-rule="evenodd"
                                                                     d="M12.53 16.28a.75.75 0 0 1-1.06 0l-7.5-7.5a.75.75 0 0 1 1.06-1.06L12 14.69l6.97-6.97a.75.75 0 1 1 1.06 1.06l-7.5 7.5Z"
                                                                     clip-rule="evenodd" />
                                                             </svg>
-                                                            <span >تیکت</span>
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-                                                                <path
-                                                                    d="M5.625 3.75a2.625 2.625 0 1 0 0 5.25h12.75a2.625 2.625 0 0 0 0-5.25H5.625ZM3.75 11.25a.75.75 0 0 0 0 1.5h16.5a.75.75 0 0 0 0-1.5H3.75ZM3 15.75a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75ZM3.75 18.75a.75.75 0 0 0 0 1.5h16.5a.75.75 0 0 0 0-1.5H3.75Z" />
-                                                            </svg>
-                                                        </a>
-                                                   
+                                                            <span>تیکت</span>
+                                                        </div>
+
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                                            viewBox="0 0 24 24" fill="currentColor">
+                                                            <path
+                                                                d="M5.625 3.75a2.625 2.625 0 1 0 0 5.25h12.75a2.625 2.625 0 0 0 0-5.25H5.625ZM3.75 11.25a.75.75 0 0 0 0 1.5h16.5a.75.75 0 0 0 0-1.5H3.75ZM3 15.75a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75ZM3.75 18.75a.75.75 0 0 0 0 1.5h16.5a.75.75 0 0 0 0-1.5H3.75Z" />
+                                                        </svg>
+                                                    </a>
+
                                                     <ul class="ps-1 ">
-                                                        <li><a href='ticket-list.html' class="flex-lg-row justify-content-lg-end align-items-center ">
-                                                            <span > تیکت ها</span>
-                                                           
-                                                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                                                    stroke="currentColor" >
-                                                                   
+                                                        <li><a href='ticket-list.html'
+                                                                class="flex-lg-row justify-content-lg-end align-items-center ">
+                                                                <span> تیکت ها</span>
+
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="18"
+                                                                    height="18" fill="none" viewBox="0 0 24 24"
+                                                                    stroke-width="1.5" stroke="currentColor">
+
                                                                     <path stroke-linecap="round" stroke-linejoin="round"
                                                                         d="M2.25 13.5h3.86a2.25 2.25 0 0 1 2.012 1.244l.256.512a2.25 2.25 0 0 0 2.013 1.244h3.218a2.25 2.25 0 0 0 2.013-1.244l.256-.512a2.25 2.25 0 0 1 2.013-1.244h3.859m-19.5.338V18a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18v-4.162c0-.224-.034-.447-.1-.661L19.24 5.338a2.25 2.25 0 0 0-2.15-1.588H6.911a2.25 2.25 0 0 0-2.15 1.588L2.35 13.177a2.25 2.25 0 0 0-.1.661Z" />
                                                                 </svg>
                                                             </a></li>
-                                                        <li><a href='FAQ.html' class="flex-lg-row justify-content-lg-end align-items-center ">
-                                                            <span >سوالات متداول</span>
-                                                            
-                                                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                                                    stroke="currentColor" class="w-6 h-6">
+                                                        <li><a href='FAQ.html'
+                                                                class="flex-lg-row justify-content-lg-end align-items-center ">
+                                                                <span>سوالات متداول</span>
+
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="18"
+                                                                    height="18" fill="none" viewBox="0 0 24 24"
+                                                                    stroke-width="1.5" stroke="currentColor"
+                                                                    class="w-6 h-6">
                                                                     <path stroke-linecap="round" stroke-linejoin="round"
                                                                         d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z" />
                                                                 </svg>
                                                             </a></li>
-                                                        <li><a href='ticket-topic.html' class="flex-lg-row justify-content-lg-end align-items-center ">
-                                                            <span >موضوعات تیکت</span>
-                                                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                                                    stroke="currentColor" class="w-6 h-6">
+                                                        <li><a href='ticket-topic.html'
+                                                                class="flex-lg-row justify-content-lg-end align-items-center ">
+                                                                <span>موضوعات تیکت</span>
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="18"
+                                                                    height="18" fill="none" viewBox="0 0 24 24"
+                                                                    stroke-width="1.5" stroke="currentColor"
+                                                                    class="w-6 h-6">
                                                                     <path stroke-linecap="round" stroke-linejoin="round"
                                                                         d="M9.568 3H5.25A2.25 2.25 0 0 0 3 5.25v4.318c0 .597.237 1.17.659 1.591l9.581 9.581c.699.699 1.78.872 2.607.33a18.095 18.095 0 0 0 5.223-5.223c.542-.827.369-1.908-.33-2.607L11.16 3.66A2.25 2.25 0 0 0 9.568 3Z" />
-                                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 6h.008v.008H6V6Z" />
+                                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                                        d="M6 6h.008v.008H6V6Z" />
                                                                 </svg>
                                                             </a></li>
                                                     </ul>
                                                 </li>
                                                 <li class='sub-menu'>
-                                                    <a href='#' class="flex-lg-row justify-content-lg-end align-items-center ">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-                                                            <path fill-rule="evenodd"
-                                                                d="M12.53 16.28a.75.75 0 0 1-1.06 0l-7.5-7.5a.75.75 0 0 1 1.06-1.06L12 14.69l6.97-6.97a.75.75 0 1 1 1.06 1.06l-7.5 7.5Z"
-                                                                clip-rule="evenodd" />
-                                                        </svg>
-                                    
-                                                        <span>کاربران</span>
-                                    
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                                    <a href='#'
+                                                        class="flex-lg-row justify-content-lg-end align-items-center ">
+                                                        <div class="w-100 d-flex justify-content-between ">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="18"
+                                                                height="18" viewBox="0 0 24 24" fill="currentColor">
+                                                                <path fill-rule="evenodd"
+                                                                    d="M12.53 16.28a.75.75 0 0 1-1.06 0l-7.5-7.5a.75.75 0 0 1 1.06-1.06L12 14.69l6.97-6.97a.75.75 0 1 1 1.06 1.06l-7.5 7.5Z"
+                                                                    clip-rule="evenodd" />
+                                                            </svg>
+
+                                                            <span>کاربران</span>
+                                                        </div>
+
+
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                                            viewBox="0 0 24 24" fill="currentColor">
                                                             <path fill-rule="evenodd"
                                                                 d="M8.25 6.75a3.75 3.75 0 1 1 7.5 0 3.75 3.75 0 0 1-7.5 0ZM15.75 9.75a3 3 0 1 1 6 0 3 3 0 0 1-6 0ZM2.25 9.75a3 3 0 1 1 6 0 3 3 0 0 1-6 0ZM6.31 15.117A6.745 6.745 0 0 1 12 12a6.745 6.745 0 0 1 6.709 7.498.75.75 0 0 1-.372.568A12.696 12.696 0 0 1 12 21.75c-2.305 0-4.47-.612-6.337-1.684a.75.75 0 0 1-.372-.568 6.787 6.787 0 0 1 1.019-4.38Z"
                                                                 clip-rule="evenodd" />
@@ -105,31 +149,45 @@
                                                         </svg>
                                                     </a>
                                                     <ul class="ps-1">
-                                                        <li><a href='users.html' class="flex-lg-row justify-content-lg-end align-items-center ">
-                                                            <span > لیست کاربران</span>
-                                                           
-                                                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                                                    stroke="currentColor" class="w-6 h-6">
+                                                        <li><a href='users.html'
+                                                                class="flex-lg-row justify-content-lg-end align-items-center ">
+                                                                <span> لیست کاربران</span>
+
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="18"
+                                                                    height="18" fill="none" viewBox="0 0 24 24"
+                                                                    stroke-width="1.5" stroke="currentColor"
+                                                                    class="w-6 h-6">
                                                                     <path stroke-linecap="round" stroke-linejoin="round"
                                                                         d="M9 12h3.75M9 15h3.75M9 18h3.75m3 .75H18a2.25 2.25 0 0 0 2.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 0 0-1.123-.08m-5.801 0c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75 2.25 2.25 0 0 0-.1-.664m-5.8 0A2.251 2.251 0 0 1 13.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m0 0H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V9.375c0-.621-.504-1.125-1.125-1.125H8.25ZM6.75 12h.008v.008H6.75V12Zm0 3h.008v.008H6.75V15Zm0 3h.008v.008H6.75V18Z" />
                                                                 </svg>
-                                    
+
                                                             </a></li>
-                                                        <li><a href='Roles.html' class="flex-lg-row justify-content-lg-end align-items-center ">
-                                                            <span> نقش ها </span>
-                                                           
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                                            stroke="currentColor" class="w-6 h-6"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
-                                                        </a></li>
-                                                            
+                                                        <li><a href='Roles.html'
+                                                                class="flex-lg-row justify-content-lg-end align-items-center ">
+                                                                <span> نقش ها </span>
+
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="18"
+                                                                    height="18" fill="none" viewBox="0 0 24 24"
+                                                                    stroke-width="1.5" stroke="currentColor"
+                                                                    class="w-6 h-6">
+                                                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2">
+                                                                    </path>
+                                                                    <circle cx="9" cy="7" r="4"></circle>
+                                                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                                                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                                                                </svg>
+                                                            </a></li>
+
                                                     </ul>
                                                 </li>
-                                    
-                                    
+
+
                                                 <li>
-                                                    <a href='license.html' class="flex-lg-row justify-content-lg-end align-items-center ">
+                                                    <a href='license.html'
+                                                        class="flex-lg-row justify-content-lg-end align-items-center ">
                                                         <span> لایسنس</span>
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                                            viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
                                                             <path fill-rule="evenodd"
                                                                 d="M12.516 2.17a.75.75 0 0 0-1.032 0 11.209 11.209 0 0 1-7.877 3.08.75.75 0 0 0-.722.515A12.74 12.74 0 0 0 2.25 9.75c0 5.942 4.064 10.933 9.563 12.348a.749.749 0 0 0 .374 0c5.499-1.415 9.563-6.406 9.563-12.348 0-1.39-.223-2.73-.635-3.985a.75.75 0 0 0-.722-.516l-.143.001c-2.996 0-5.717-1.17-7.734-3.08Zm3.094 8.016a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z"
                                                                 clip-rule="evenodd" />
@@ -137,37 +195,45 @@
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <a href='customer.html' class="flex-lg-row justify-content-lg-end align-items-center ">
+                                                    <a href='customer.html'
+                                                        class="flex-lg-row justify-content-lg-end align-items-center ">
                                                         <span> مشتریان</span>
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                                            viewBox="0 0 24 24" fill="currentColor">
                                                             <path
                                                                 d="M4.5 6.375a4.125 4.125 0 1 1 8.25 0 4.125 4.125 0 0 1-8.25 0ZM14.25 8.625a3.375 3.375 0 1 1 6.75 0 3.375 3.375 0 0 1-6.75 0ZM1.5 19.125a7.125 7.125 0 0 1 14.25 0v.003l-.001.119a.75.75 0 0 1-.363.63 13.067 13.067 0 0 1-6.761 1.873c-2.472 0-4.786-.684-6.76-1.873a.75.75 0 0 1-.364-.63l-.001-.122ZM17.25 19.128l-.001.144a2.25 2.25 0 0 1-.233.96 10.088 10.088 0 0 0 5.06-1.01.75.75 0 0 0 .42-.643 4.875 4.875 0 0 0-6.957-4.611 8.586 8.586 0 0 1 1.71 5.157v.003Z" />
                                                         </svg>
                                                     </a>
                                                 </li>
-                                                <li><a href='error-report.html' class="flex-lg-row justify-content-lg-end align-items-center ">
-                                                    <span > گزارش خطا</span>
-                                                       
-                                    
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                                <li><a href='error-report.html'
+                                                        class="flex-lg-row justify-content-lg-end align-items-center ">
+                                                        <span> گزارش خطا</span>
+
+
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                                            viewBox="0 0 24 24" fill="currentColor">
                                                             <path fill-rule="evenodd"
                                                                 d="M9.401 3.003c1.155-2 4.043-2 5.197 0l7.355 12.748c1.154 2-.29 4.5-2.599 4.5H4.645c-2.309 0-3.752-2.5-2.598-4.5L9.4 3.003ZM12 8.25a.75.75 0 0 1 .75.75v3.75a.75.75 0 0 1-1.5 0V9a.75.75 0 0 1 .75-.75Zm0 8.25a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Z"
                                                                 clip-rule="evenodd" />
                                                         </svg>
                                                     </a></li>
-                                                <li><a href='message.html' class="flex-lg-row justify-content-lg-end align-items-center ">
-                                                    <span >پیامک ها</span>
-                                                        
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                                <li><a href='message.html'
+                                                        class="flex-lg-row justify-content-lg-end align-items-center ">
+                                                        <span>پیامک ها</span>
+
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                                            viewBox="0 0 24 24" fill="currentColor">
                                                             <path fill-rule="evenodd"
                                                                 d="M4.804 21.644A6.707 6.707 0 0 0 6 21.75a6.721 6.721 0 0 0 3.583-1.029c.774.182 1.584.279 2.417.279 5.322 0 9.75-3.97 9.75-9 0-5.03-4.428-9-9.75-9s-9.75 3.97-9.75 9c0 2.409 1.025 4.587 2.674 6.192.232.226.277.428.254.543a3.73 3.73 0 0 1-.814 1.686.75.75 0 0 0 .44 1.223ZM8.25 10.875a1.125 1.125 0 1 0 0 2.25 1.125 1.125 0 0 0 0-2.25ZM10.875 12a1.125 1.125 0 1 1 2.25 0 1.125 1.125 0 0 1-2.25 0Zm4.875-1.125a1.125 1.125 0 1 0 0 2.25 1.125 1.125 0 0 0 0-2.25Z"
                                                                 clip-rule="evenodd" />
                                                         </svg>
                                                     </a></li>
-                                                <li><a href='reminder.html' class="flex-lg-row justify-content-lg-end align-items-center ">
-                                                    <span > یادآوری</span>
-                                                   
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                                <li><a href='reminder.html'
+                                                        class="flex-lg-row justify-content-lg-end align-items-center ">
+                                                        <span> یادآوری</span>
+
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                                            viewBox="0 0 24 24" fill="currentColor">
                                                             <path
                                                                 d="M5.85 3.5a.75.75 0 0 0-1.117-1 9.719 9.719 0 0 0-2.348 4.876.75.75 0 0 0 1.479.248A8.219 8.219 0 0 1 5.85 3.5ZM19.267 2.5a.75.75 0 1 0-1.118 1 8.22 8.22 0 0 1 1.987 4.124.75.75 0 0 0 1.48-.248A9.72 9.72 0 0 0 19.266 2.5Z" />
                                                             <path fill-rule="evenodd"
@@ -178,45 +244,60 @@
                                             </ul>
                                             <div class="line"></div>
                                             <ul>
-                                    
+
                                                 <li class='sub-menu '>
-                                                   <a href='#' class="flex-lg-row justify-content-lg-end align-items-center ">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-                                                            <path fill-rule="evenodd"
-                                                                d="M12.53 16.28a.75.75 0 0 1-1.06 0l-7.5-7.5a.75.75 0 0 1 1.06-1.06L12 14.69l6.97-6.97a.75.75 0 1 1 1.06 1.06l-7.5 7.5Z"
-                                                                clip-rule="evenodd" />
-                                                        </svg>
-                                                        <span>نرم افزار</span>
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                                                    <a href='#'
+                                                        class="flex-lg-row justify-content-lg-end align-items-center ">
+                                                        <div class="w-100 d-flex justify-content-between ">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="18"
+                                                                height="18" viewBox="0 0 24 24" fill="currentColor">
+                                                                <path fill-rule="evenodd"
+                                                                    d="M12.53 16.28a.75.75 0 0 1-1.06 0l-7.5-7.5a.75.75 0 0 1 1.06-1.06L12 14.69l6.97-6.97a.75.75 0 1 1 1.06 1.06l-7.5 7.5Z"
+                                                                    clip-rule="evenodd" />
+                                                            </svg>
+                                                            <span>نرم افزار</span>
+                                                        </div>
+
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                                            viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
                                                             <path fill-rule="evenodd"
                                                                 d="M3 6a3 3 0 0 1 3-3h2.25a3 3 0 0 1 3 3v2.25a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3V6Zm9.75 0a3 3 0 0 1 3-3H18a3 3 0 0 1 3 3v2.25a3 3 0 0 1-3 3h-2.25a3 3 0 0 1-3-3V6ZM3 15.75a3 3 0 0 1 3-3h2.25a3 3 0 0 1 3 3V18a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3v-2.25Zm9.75 0a3 3 0 0 1 3-3H18a3 3 0 0 1 3 3V18a3 3 0 0 1-3 3h-2.25a3 3 0 0 1-3-3v-2.25Z"
                                                                 clip-rule="evenodd" />
                                                         </svg>
                                                     </a>
                                                     <ul class="ps-1">
-                                                        <li><a href='update.html' class="flex-lg-row justify-content-lg-end  align-items-center ">
-                                                            <span>  به روز رسانی ها</span>
-                                                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                                                    stroke="currentColor" class="w-6 h-6">
+                                                        <li><a href='update.html'
+                                                                class="flex-lg-row justify-content-lg-end  align-items-center ">
+                                                                <span> به روز رسانی ها</span>
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="18"
+                                                                    height="18" fill="none" viewBox="0 0 24 24"
+                                                                    stroke-width="1.5" stroke="currentColor"
+                                                                    class="w-6 h-6">
                                                                     <path stroke-linecap="round" stroke-linejoin="round"
                                                                         d="M12 16.5V9.75m0 0 3 3m-3-3-3 3M6.75 19.5a4.5 4.5 0 0 1-1.41-8.775 5.25 5.25 0 0 1 10.233-2.33 3 3 0 0 1 3.758 3.848A3.752 3.752 0 0 1 18 19.5H6.75Z" />
                                                                 </svg>
-                                    
+
                                                             </a></li>
-                                                        <li><a href='register-version.html' class="flex-lg-row justify-content-lg-end  align-items-center ">
-                                                            <span> ثبت نسخه</span>
-                                                               
-                                                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                                                    stroke="currentColor" class="w-6 h-6">
+                                                        <li><a href='register-version.html'
+                                                                class="flex-lg-row justify-content-lg-end  align-items-center ">
+                                                                <span> ثبت نسخه</span>
+
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="18"
+                                                                    height="18" fill="none" viewBox="0 0 24 24"
+                                                                    stroke-width="1.5" stroke="currentColor"
+                                                                    class="w-6 h-6">
                                                                     <path stroke-linecap="round" stroke-linejoin="round"
                                                                         d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3" />
                                                                 </svg>
                                                             </a></li>
-                                                        <li><a href='app-list.html' class="flex-lg-row justify-content-lg-end  align-items-center ">
-                                                            <span>ثبت نرم افزار</span>
-                                                            
-                                                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                                                    stroke="currentColor" class="w-6 h-6">
+                                                        <li><a href='app-list.html'
+                                                                class="flex-lg-row justify-content-lg-end  align-items-center ">
+                                                                <span>ثبت نرم افزار</span>
+
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="18"
+                                                                    height="18" fill="none" viewBox="0 0 24 24"
+                                                                    stroke-width="1.5" stroke="currentColor"
+                                                                    class="w-6 h-6">
                                                                     <path stroke-linecap="round" stroke-linejoin="round"
                                                                         d="M13.5 16.875h3.375m0 0h3.375m-3.375 0V13.5m0 3.375v3.375M6 10.5h2.25a2.25 2.25 0 0 0 2.25-2.25V6a2.25 2.25 0 0 0-2.25-2.25H6A2.25 2.25 0 0 0 3.75 6v2.25A2.25 2.25 0 0 0 6 10.5Zm0 9.75h2.25A2.25 2.25 0 0 0 10.5 18v-2.25a2.25 2.25 0 0 0-2.25-2.25H6a2.25 2.25 0 0 0-2.25 2.25V18A2.25 2.25 0 0 0 6 20.25Zm9.75-9.75H18a2.25 2.25 0 0 0 2.25-2.25V6A2.25 2.25 0 0 0 18 3.75h-2.25A2.25 2.25 0 0 0 13.5 6v2.25a2.25 2.25 0 0 0 2.25 2.25Z" />
                                                                 </svg>
@@ -225,10 +306,10 @@
                                                 </li>
                                             </ul>
                                         </nav>
-                                        
+
                                     </div>
                                 </div>
-                              </div>
+                            </div>
                         </div>
                         <div class="col-10 d-flex ">
                             <div class="row d-flex align-items-center ">
@@ -239,29 +320,30 @@
                                             ZamanPardaz
                                         </span>
                                     </a>
-                                
+
                                 </div>
                                 <div class="col-6 d-none d-md-inline  ">
                                     <h6 class=" header-txt">سیستم پشتیبانی و تیکت زمان پرداز</h6>
                                 </div>
                             </div>
-                            
-                           
+
+
                         </div>
-                        
+
                     </div>
                 </div>
-                
+
                 <div class="col-5 " dir="ltr">
-                    
+
                     <div class="d-flex profile-header">
                         <img src="Image/user.png" alt="">
                         <div class=" d-flex align-items-center m-2" dir="rtl">
                             <div class="dropdown d-flex align-items-center" dir="rtl">
-                                <a class="dropdown-toggle profile-name" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <a class="dropdown-toggle profile-name" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
                                     یاسمن افشاری
                                 </a>
-        
+
                                 <ul class="dropdown-menu w-50">
                                     <li class="ps-3 d-flex flex-row">
                                         <img src="Image/user.png" class="w-25 h-25 me-1" alt="">
@@ -269,15 +351,15 @@
                                             <span class="small-fs">یاسمن افشاری</span>
                                             <span class="small-fs">۰۹۳۶ ۶۶۶ ۶۶۶۶ </span>
                                         </div>
-        
+
                                     </li>
-                                   
+
                                     <li><a class="dropdown-item" href="#">ویرایش</a></li>
                                     <li><a class="dropdown-item text-danger" href="#">خروج</a></li>
                                 </ul>
                             </div>
                         </div>
-                        <div class=" d-flex">
+                        <div class=" d-md-flex d-none ">
                             <label class="switch">
                                 <span class="switch__icon switch__icon--light">
                                     <i class="fas fa-solid fa-sun"></i>
@@ -291,18 +373,18 @@
                         </div>
                     </div>
                 </div>
-                
+
             </div>
         </div>
-        
+
     </header>
 
 
-   
-  
-    <div class="row w-100 "> 
-         <!-- sidebar -->
-         <div class="col-2 d-none d-md-inline ">
+
+
+    <div class="row w-100 ">
+        <!-- sidebar -->
+        <div class="col-2 d-none d-md-inline ">
             <div class="sidebar-wrapper  ">
                 <nav class='animated bounceInDown'>
 
@@ -443,7 +525,7 @@
                                 </svg>
                             </a>
                         </li>
-                       
+
                         <li><a href='message.html'
                                 class="flex-lg-row justify-content-lg-end justify-content-center flex-column-reverse align-items-center   ">
                                 <span class="d-lg-flex d-none">پیامک ها</span>
@@ -505,7 +587,7 @@
                                         </svg>
 
                                     </a></li>
-                                
+
                                 <li><a href='app-list.html'
                                         class="flex-lg-row justify-content-lg-end justify-content-center flex-column-reverse align-items-center   ">
                                         <span class="d-lg-flex d-none"> لیست نرم افزارها</span>
@@ -532,7 +614,7 @@
                 <div class="title mt-3 ">
                     <h5></h5>
                 </div>
-                
+
             </div>
         </div>
     </div>

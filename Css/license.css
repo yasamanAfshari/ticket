@@ -68,7 +68,7 @@
 }
 @media (max-width: 576px) {
     .select-style{
-        width: 75%;
+        width: 100%;
     }
 }
 .modal-body .select-style{
@@ -143,21 +143,22 @@ tbody td .dropdown-menu{
 .add-btn svg{
     color: var(--txt);
 }
-.table-wrapper {
-
-    height: 450px;
-}
 
 .table-wrapper table thead {
     position: sticky;
     top: -1px;
-    z-index: 10;
+    z-index: 3;
 }
-.table-wrapper table tbody{
+.table-responsive {
     overflow: scroll;
-    height: 200px;
+   
 
 }
+.table-wrapper {
+
+    max-height: 350px;
+}
+
 .table-wrapper::-webkit-scrollbar {
 
     background-color: var(--bg-color);

@@ -288,3 +288,8 @@ rect{
     border-radius: 6px;
     border: none;
 }
+.input-group input{
+    height: 35px;
+    padding: 18px;
+
+}

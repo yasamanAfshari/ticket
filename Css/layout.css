@@ -293,3 +293,6 @@ rect{
     padding: 18px;
 
 }
+.form-check-input:checked {
+    background-color: var(--main-color) !important;
+}

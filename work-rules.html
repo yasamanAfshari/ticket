@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ticket topic</title>
+    <title>work-rules</title>
     <link rel="stylesheet" href="Css/bootstrap.rtl.min.css">
     <link rel="stylesheet" href="Css/layout.css">
     <link rel="stylesheet" href="Css/Font/css/fontawesome.css">
@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="Css/btn.css">
     <link rel="stylesheet" href="Css/layout-responsive.css">
     <link rel="stylesheet" href="Css/update.css">
-    <link rel="stylesheet" href="Css/ticket-topic.css">
     <link rel="stylesheet" href="Css/update-responsive.css">
     <link rel="stylesheet" id="switcher-id" href="">
     <link rel="stylesheet" href="Css/persian-datepicker.css">
@@ -424,7 +423,6 @@
     </header>
 
 
-
     <div class="row-cols-auto  w-100 d-flex justify-content-center  ">
         <!-- sidebar -->
         <div class="col-2 d-none d-md-inline ">
@@ -688,13 +686,14 @@
             </div>
         </div>
 
+
         <!-- main content -->
         <div class="col-12 col-md-10 ">
             <div class="container-fluid   ">
                 <div class="title mt-2 ">
-                    <h5>موضوعات تیکت</h5>
+                    <h5>احکام کاری</h5>
                 </div>
-                <div class="box-wrapper row d-flex justify-content-center pt-2 ">
+                <div class="box-wrapper row d-flex justify-content-center p-2 ">
                     <!-- box header search -->
                     <div class="search-wrapper row w-100 d-flex align-content-center pt-2 ">
                         <div class="col-6 ">
@@ -723,247 +722,362 @@
 
                             <!-- Modal -->
                             <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static"
-                            data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
-                            aria-hidden="true">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header">
+                                data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
 
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                            aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                        
-                                        <div class="position-relative select-style">
-                                            <select class="form-control" placeholder="موضوع">
-                                                <option value="...">حضور و غیاب</option>
-                                                <option value="...">باشگاهی</option>
-                                                <option value="...">آموزشگاه</option>                                                
-                                            </select>
-                                            <label for="" class="select-label ">
-                                                ریشه
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                                    <path fill-rule="evenodd" d="M12.53 16.28a.75.75 0 0 1-1.06 0l-7.5-7.5a.75.75 0 0 1 1.06-1.06L12 14.69l6.97-6.97a.75.75 0 1 1 1.06 1.06l-7.5 7.5Z" clip-rule="evenodd"></path>
-                                                </svg>
-                                            </label>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
                                         </div>
+                                        <div class="modal-body">
 
-                                        <div class="form-floating mt-2 ">
-                                            <input type="text" class="form-control" id="floatingInput" placeholder="نام کاربر">
-            
-                                            <label for="floatingInput">
-                                               
-            
-                                                عنوان
-                                            </label>
+                                            <div class="form-floating mb-3">
+                                                <input type="number" class="form-control" id="floatingInput"
+                                                    placeholder="آیتم حقوق و دستمزد" tabindex="1">
+                                                <label for="floatingInput">آیتم حقوق و دستمزد</label>
+                                            </div>
+                                            <div class="form-floating mb-3">
+                                                <input type="text" class="form-control" id="floatingInput"
+                                                    placeholder="فرمول محاسبه" tabindex="1">
+                                                <label for="floatingInput">فرمول محاسبه</label>
+                                            </div>
+                                            <div class="form-floating mb-3">
+                                                <input type="number" class="form-control" id="floatingInput"
+                                                    placeholder="وضعیت" tabindex="1">
+                                                <label for="floatingInput">وضعیت</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                    شامل بیمه
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                  شامل مالیات
+                                                </label>
+                                            </div>
+                                            <!-- ////// -->
+                                          
+
+
                                         </div>
+                                        <div class="modal-footer">
+                                            <button type="button"
+                                                class="d-flex justify-content-center align-items-center  btn-register">ثبت</button>
+                                            <button type="button"
+                                                class=" d-flex justify-content-center align-items-center btn2"
+                                                data-bs-dismiss="modal">بازگشت</button>
 
-                                        <div class="form-floating mt-2 ">
-                                            <input type="number" class="form-control" id="floatingInput" placeholder="نام کاربر" dir="rtl">
-            
-                                            <label for="floatingInput">
-                                               
-            
-                                                ترتیب
-                                            </label>
                                         </div>
-
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button"
-                                            class="d-flex justify-content-center align-items-center  btn-register">ثبت</button>
-                                        <button type="button"
-                                            class=" d-flex justify-content-center align-items-center btn2"
-                                            data-bs-dismiss="modal">بازگشت</button>
-
                                     </div>
                                 </div>
                             </div>
-                        </div>
                         </div>
 
                     </div>
                     <!-- end box header search -->
 
-                    <!-- tree view -->
-                    <div class="treeview pt-3 ">
-                        <ul>
-                            
-                            <li>
-                                <span>
-                                    
-                                    سخت افزار
-                                 </span>
-                                <svg class="folder" width="16" height="16" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M7.18571 4.78261H11.0844V7.06522H7.18571V11.5026H4.76614V7.06522H0.849186V4.78261H4.76614V0.637391H7.18571V4.78261Z" fill="black"></path>
-                                </svg>
+                    <!-- table -->
 
-                                <ul class="check1">
-                                    <li><a href="">
-                                           
-                                            ندارد
-                                        </a></li>
-                                   
-                                </ul>
-                            </li>
+                    <div class="mt-4 pe-0 ps-0  table-wrapper overflow-x-auto ">
 
-                            <li>
-                                <span>
-                                    
-                                    نرم افزار حضور غیاب
-                                 </span>
+                        <table class="table table-responsive">
+                            <thead>
+                                <tr>
+                                    <th scope="col" class="col-1 ">#</th>
+                                    <th scope="col">عنوان</th>
+                                    <th scope="col">استفاده در بیمه و مالیات</th>
+                                    <th scope="col">توضیحات</th>
+                                    <th scope="col">تاریخ شروع</th>
+                                    <th scope="col">تاریخ پایان</th>
+                                    <th scope="col" class="col-1"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>حکم کاری سال 1403</td>
+                                    <td>دارد</td>
+                                    <td> لورم ایپسوم متن ساختگی در صنعت</td>
+                                    <td> ۱۴۰۲/۱۱/۱۱</td>
+                                    <td> ۱۴۰۲/۱۱/۱۱</td>
+                                    <td>
+                                        <div class="d-flex justify-content-end ">
+                                            <div class="me-1 ">
 
-                                <svg class="folder" width="16" height="16" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M7.18571 4.78261H11.0844V7.06522H7.18571V11.5026H4.76614V7.06522H0.849186V4.78261H4.76614V0.637391H7.18571V4.78261Z" fill="black"></path>
-                                </svg>
+                                                <div class="zp-tooltip">
+                                                    <a href="">
+                                                        <svg width="22" height="22" viewBox="0 0 25 25" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <rect width="25" height="25" rx="5" fill="#173040" />
+                                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                d="M16.3632 6.25293L18.7624 8.80725C19.0792 9.14449 19.0792 9.69591 18.7624 10.0331L17.4355 11.4459L13.8847 7.66567L15.2117 6.25293C15.5285 5.91569 16.0464 5.91569 16.3632 6.25293ZM13.5102 11.946V11.9472C13.6086 12.052 13.6579 12.191 13.6579 12.3277C13.6579 12.4644 13.6086 12.6023 13.5102 12.7082V12.7094L13.5091 12.7105L10.2901 16.1387H10.2891C10.2613 16.1683 10.2302 16.1934 10.1992 16.215H10.1981C10.166 16.2367 10.1328 16.2538 10.0986 16.2663C9.92095 16.3324 9.71441 16.2891 9.57316 16.1387H9.57209V16.1376C9.54426 16.1079 9.52072 16.0749 9.50039 16.0418V16.0407C9.48005 16.0065 9.464 15.9712 9.45223 15.9348C9.39016 15.7456 9.43083 15.5257 9.57102 15.3754V15.3742L12.7911 11.946H12.7921C12.8906 11.8412 13.0211 11.7888 13.1496 11.7888C13.278 11.7888 13.4075 11.8412 13.507 11.946H13.5102ZM10.867 18.431C9.90597 18.7477 8.94605 19.0633 7.98507 19.38C5.72708 20.124 5.73671 20.6196 6.35311 18.3045L7.32373 14.6587L7.32052 14.6553L13.2127 8.38115L16.7634 12.1614L10.8702 18.4355L10.867 18.431ZM7.92942 15.3036L10.2613 17.7861C9.62987 17.9935 8.99849 18.2008 8.36818 18.407C6.88497 18.8935 6.89139 19.2194 7.29483 17.6984L7.92942 15.3036Z"
+                                                                fill="white" />
+                                                        </svg>
+                                                    </a>
+                                                    <span class="tooltiptext">
+                                                        ویرایش
+                                                    </span>
+                                                </div>
 
-                                
-                                <ul class="check2">
-                                    <li><a href="">
-                                           
-                                            اطلاعات پایه
-                                        </a></li>
-                                    <li><a href="">
-                                           
-                                            عملیات
-                                        </a></li>
-                                    <li><a href="">
-                                          
-                                            کارتابل
-                                        </a></li>
-                                        <li><a href="">
-                                           
-                                           گزارشات
-                                        </a></li>
-                                    <li><a href="">
-                                          
-                                            حقوق و دستمزد
-                                        </a></li>
-                                </ul>
-                            </li>
+                                            </div>
+                                            <div class="ms-1 ">
+                                                <div class="zp-tooltip">
+                                                    <a href="">
+                                                        <svg width="22" height="22" viewBox="0 0 25 25" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <rect width="25" height="25" rx="5" fill="#173040" />
+                                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                d="M6.27868 7.01912H10.826V6.39779C10.826 6.17901 11.0265 6 11.2724 6H13.783C14.0288 6 14.2295 6.1789 14.2295 6.39779V7.01923H18.7213C18.8749 7.01923 19 7.13106 19 7.26774V8.48587H6V7.26764C6 7.13095 6.12527 7.01912 6.27868 7.01912ZM7.03183 9.13206H18.0651C18.2951 9.13206 18.5039 9.30123 18.4831 9.50489L17.5494 18.6275C17.5287 18.8313 17.3606 19 17.1311 19H7.95264C7.723 19 7.55463 18.8316 7.53421 18.6275L6.6134 9.50489C6.59298 9.30049 6.8016 9.13206 7.03183 9.13206ZM14.202 10.549H15.3735V17.4589H14.202V10.549ZM9.57068 10.549H10.7423V17.4589H9.57068V10.549ZM11.8861 10.549H13.0579V17.4589H11.8861V10.549Z"
+                                                                fill="white" />
+                                                        </svg>
 
-                            <li>
-                                <span>
-                                   
-                                    نرم افزار آموزشگاه
-                                </span>
-                                <svg class="folder" width="16" height="16" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M7.18571 4.78261H11.0844V7.06522H7.18571V11.5026H4.76614V7.06522H0.849186V4.78261H4.76614V0.637391H7.18571V4.78261Z" fill="black"></path>
-                                </svg>
 
-                                
-                                <ul class="check3">
-                                    <li><a href="">
-                                           
-                                           اطلاعات پایه
-                                        </a></li>
-                                    
-                                </ul>
-                            </li>
-                            
-                            <li>
-                                <span>
-                                   
-                                    نرم افزار باشگاهی
-                                </span>
+                                                    </a>
+                                                    <span class="tooltiptext">
+                                                        حذف
+                                                    </span>
+                                                </div>
 
-                                <svg class="folder" width="16" height="16" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M7.18571 4.78261H11.0844V7.06522H7.18571V11.5026H4.76614V7.06522H0.849186V4.78261H4.76614V0.637391H7.18571V4.78261Z" fill="black"></path>
-                                </svg>
+                                            </div>
+                                        </div>
 
-                               
-                                <ul class="check3">
-                                    <li><a href="">
-                                           
-                                           اطلاعات پایه
-                                        </a></li>
-                                    
-                                </ul>
-                            </li>
+                                    </td>
+                                </tr>
 
-                            <li>
-                                <span>
-                                   
-                                    انتقادات و پیشنهادات
-                                </span>
-                                <svg class="folder" width="16" height="16" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M7.18571 4.78261H11.0844V7.06522H7.18571V11.5026H4.76614V7.06522H0.849186V4.78261H4.76614V0.637391H7.18571V4.78261Z" fill="black"></path>
-                                </svg>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>حکم کاری سال 1403</td>
+                                    <td>دارد</td>
+                                    <td> لورم ایپسوم متن ساختگی در صنعت</td>
+                                    <td> ۱۴۰۲/۱۱/۱۱</td>
+                                    <td> ۱۴۰۲/۱۱/۱۱</td>
+                                    <td>
+                                        <div class="d-flex justify-content-end ">
+                                            <div class="me-1 ">
 
-                               
-                                <ul class="check3">
-                                    <li><a href="">
-                                           
-                                           ندارد
-                                        </a></li>
-                                    
-                                </ul>
-                            </li>
+                                                <div class="zp-tooltip">
+                                                    <a href="">
+                                                        <svg width="22" height="22" viewBox="0 0 25 25" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <rect width="25" height="25" rx="5" fill="#173040" />
+                                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                d="M16.3632 6.25293L18.7624 8.80725C19.0792 9.14449 19.0792 9.69591 18.7624 10.0331L17.4355 11.4459L13.8847 7.66567L15.2117 6.25293C15.5285 5.91569 16.0464 5.91569 16.3632 6.25293ZM13.5102 11.946V11.9472C13.6086 12.052 13.6579 12.191 13.6579 12.3277C13.6579 12.4644 13.6086 12.6023 13.5102 12.7082V12.7094L13.5091 12.7105L10.2901 16.1387H10.2891C10.2613 16.1683 10.2302 16.1934 10.1992 16.215H10.1981C10.166 16.2367 10.1328 16.2538 10.0986 16.2663C9.92095 16.3324 9.71441 16.2891 9.57316 16.1387H9.57209V16.1376C9.54426 16.1079 9.52072 16.0749 9.50039 16.0418V16.0407C9.48005 16.0065 9.464 15.9712 9.45223 15.9348C9.39016 15.7456 9.43083 15.5257 9.57102 15.3754V15.3742L12.7911 11.946H12.7921C12.8906 11.8412 13.0211 11.7888 13.1496 11.7888C13.278 11.7888 13.4075 11.8412 13.507 11.946H13.5102ZM10.867 18.431C9.90597 18.7477 8.94605 19.0633 7.98507 19.38C5.72708 20.124 5.73671 20.6196 6.35311 18.3045L7.32373 14.6587L7.32052 14.6553L13.2127 8.38115L16.7634 12.1614L10.8702 18.4355L10.867 18.431ZM7.92942 15.3036L10.2613 17.7861C9.62987 17.9935 8.99849 18.2008 8.36818 18.407C6.88497 18.8935 6.89139 19.2194 7.29483 17.6984L7.92942 15.3036Z"
+                                                                fill="white" />
+                                                        </svg>
+                                                    </a>
+                                                    <span class="tooltiptext">
+                                                        ویرایش
+                                                    </span>
+                                                </div>
 
-                            <li>
-                                <span>
-                                   
-                                    درخواست ارتقا
-                                 </span>
-                                <svg class="folder" width="16" height="16" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M7.18571 4.78261H11.0844V7.06522H7.18571V11.5026H4.76614V7.06522H0.849186V4.78261H4.76614V0.637391H7.18571V4.78261Z" fill="black"></path>
-                                </svg>
+                                            </div>
+                                            <div class="ms-1 ">
+                                                <div class="zp-tooltip">
+                                                    <a href="">
+                                                        <svg width="22" height="22" viewBox="0 0 25 25" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <rect width="25" height="25" rx="5" fill="#173040" />
+                                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                d="M6.27868 7.01912H10.826V6.39779C10.826 6.17901 11.0265 6 11.2724 6H13.783C14.0288 6 14.2295 6.1789 14.2295 6.39779V7.01923H18.7213C18.8749 7.01923 19 7.13106 19 7.26774V8.48587H6V7.26764C6 7.13095 6.12527 7.01912 6.27868 7.01912ZM7.03183 9.13206H18.0651C18.2951 9.13206 18.5039 9.30123 18.4831 9.50489L17.5494 18.6275C17.5287 18.8313 17.3606 19 17.1311 19H7.95264C7.723 19 7.55463 18.8316 7.53421 18.6275L6.6134 9.50489C6.59298 9.30049 6.8016 9.13206 7.03183 9.13206ZM14.202 10.549H15.3735V17.4589H14.202V10.549ZM9.57068 10.549H10.7423V17.4589H9.57068V10.549ZM11.8861 10.549H13.0579V17.4589H11.8861V10.549Z"
+                                                                fill="white" />
+                                                        </svg>
 
-                               
-                                <ul class="check3">
-                                    <li><a href="">
-                                           
-                                           ندارد
-                                        </a></li>
-                                    
-                                </ul>
-                            </li>
 
-                            <li>
-                                <span>
-                                   
-                                    درخواست قابلیت جدید
-                                 </span>
-                                <svg class="folder" width="16" height="16" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M7.18571 4.78261H11.0844V7.06522H7.18571V11.5026H4.76614V7.06522H0.849186V4.78261H4.76614V0.637391H7.18571V4.78261Z" fill="black"></path>
-                                </svg>
+                                                    </a>
+                                                    <span class="tooltiptext">
+                                                        حذف
+                                                    </span>
+                                                </div>
 
-                               
-                                <ul class="check3">
-                                    <li><a href="">
-                                           
-                                           ندارد
-                                        </a></li>
-                                    
-                                </ul>
-                            </li>
+                                            </div>
+                                        </div>
 
-                            <li>
-                                <span>
-                                   
-                                    درخواست آموزش
-                                 </span>
-                                <svg class="folder" width="16" height="16" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M7.18571 4.78261H11.0844V7.06522H7.18571V11.5026H4.76614V7.06522H0.849186V4.78261H4.76614V0.637391H7.18571V4.78261Z" fill="black"></path>
-                                </svg>
+                                    </td>
+                                </tr>
 
-                               
-                                <ul class="check3">
-                                    <li><a href="">
-                                           
-                                           آنلاین
-                                        </a></li>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>حکم کاری سال 1403</td>
+                                    <td>دارد</td>
+                                    <td> لورم ایپسوم متن ساختگی در صنعت</td>
+                                    <td> ۱۴۰۲/۱۱/۱۱</td>
+                                    <td> ۱۴۰۲/۱۱/۱۱</td>
+                                    <td>
+                                        <div class="d-flex justify-content-end ">
+                                            <div class="me-1 ">
 
-                                        <li><a href="">
-                                           
-                                            حضوری
-                                         </a></li>
-                                    
-                                </ul>
-                            </li>
+                                                <div class="zp-tooltip">
+                                                    <a href="">
+                                                        <svg width="22" height="22" viewBox="0 0 25 25" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <rect width="25" height="25" rx="5" fill="#173040" />
+                                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                d="M16.3632 6.25293L18.7624 8.80725C19.0792 9.14449 19.0792 9.69591 18.7624 10.0331L17.4355 11.4459L13.8847 7.66567L15.2117 6.25293C15.5285 5.91569 16.0464 5.91569 16.3632 6.25293ZM13.5102 11.946V11.9472C13.6086 12.052 13.6579 12.191 13.6579 12.3277C13.6579 12.4644 13.6086 12.6023 13.5102 12.7082V12.7094L13.5091 12.7105L10.2901 16.1387H10.2891C10.2613 16.1683 10.2302 16.1934 10.1992 16.215H10.1981C10.166 16.2367 10.1328 16.2538 10.0986 16.2663C9.92095 16.3324 9.71441 16.2891 9.57316 16.1387H9.57209V16.1376C9.54426 16.1079 9.52072 16.0749 9.50039 16.0418V16.0407C9.48005 16.0065 9.464 15.9712 9.45223 15.9348C9.39016 15.7456 9.43083 15.5257 9.57102 15.3754V15.3742L12.7911 11.946H12.7921C12.8906 11.8412 13.0211 11.7888 13.1496 11.7888C13.278 11.7888 13.4075 11.8412 13.507 11.946H13.5102ZM10.867 18.431C9.90597 18.7477 8.94605 19.0633 7.98507 19.38C5.72708 20.124 5.73671 20.6196 6.35311 18.3045L7.32373 14.6587L7.32052 14.6553L13.2127 8.38115L16.7634 12.1614L10.8702 18.4355L10.867 18.431ZM7.92942 15.3036L10.2613 17.7861C9.62987 17.9935 8.99849 18.2008 8.36818 18.407C6.88497 18.8935 6.89139 19.2194 7.29483 17.6984L7.92942 15.3036Z"
+                                                                fill="white" />
+                                                        </svg>
+                                                    </a>
+                                                    <span class="tooltiptext">
+                                                        ویرایش
+                                                    </span>
+                                                </div>
 
-                        </ul>
+                                            </div>
+                                            <div class="ms-1 ">
+                                                <div class="zp-tooltip">
+                                                    <a href="">
+                                                        <svg width="22" height="22" viewBox="0 0 25 25" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <rect width="25" height="25" rx="5" fill="#173040" />
+                                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                d="M6.27868 7.01912H10.826V6.39779C10.826 6.17901 11.0265 6 11.2724 6H13.783C14.0288 6 14.2295 6.1789 14.2295 6.39779V7.01923H18.7213C18.8749 7.01923 19 7.13106 19 7.26774V8.48587H6V7.26764C6 7.13095 6.12527 7.01912 6.27868 7.01912ZM7.03183 9.13206H18.0651C18.2951 9.13206 18.5039 9.30123 18.4831 9.50489L17.5494 18.6275C17.5287 18.8313 17.3606 19 17.1311 19H7.95264C7.723 19 7.55463 18.8316 7.53421 18.6275L6.6134 9.50489C6.59298 9.30049 6.8016 9.13206 7.03183 9.13206ZM14.202 10.549H15.3735V17.4589H14.202V10.549ZM9.57068 10.549H10.7423V17.4589H9.57068V10.549ZM11.8861 10.549H13.0579V17.4589H11.8861V10.549Z"
+                                                                fill="white" />
+                                                        </svg>
+
+
+                                                    </a>
+                                                    <span class="tooltiptext">
+                                                        حذف
+                                                    </span>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>حکم کاری سال 1403</td>
+                                    <td>دارد</td>
+                                    <td> لورم ایپسوم متن ساختگی در صنعت</td>
+                                    <td> ۱۴۰۲/۱۱/۱۱</td>
+                                    <td> ۱۴۰۲/۱۱/۱۱</td>
+                                    <td>
+                                        <div class="d-flex justify-content-end ">
+                                            <div class="me-1 ">
+
+                                                <div class="zp-tooltip">
+                                                    <a href="">
+                                                        <svg width="22" height="22" viewBox="0 0 25 25" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <rect width="25" height="25" rx="5" fill="#173040" />
+                                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                d="M16.3632 6.25293L18.7624 8.80725C19.0792 9.14449 19.0792 9.69591 18.7624 10.0331L17.4355 11.4459L13.8847 7.66567L15.2117 6.25293C15.5285 5.91569 16.0464 5.91569 16.3632 6.25293ZM13.5102 11.946V11.9472C13.6086 12.052 13.6579 12.191 13.6579 12.3277C13.6579 12.4644 13.6086 12.6023 13.5102 12.7082V12.7094L13.5091 12.7105L10.2901 16.1387H10.2891C10.2613 16.1683 10.2302 16.1934 10.1992 16.215H10.1981C10.166 16.2367 10.1328 16.2538 10.0986 16.2663C9.92095 16.3324 9.71441 16.2891 9.57316 16.1387H9.57209V16.1376C9.54426 16.1079 9.52072 16.0749 9.50039 16.0418V16.0407C9.48005 16.0065 9.464 15.9712 9.45223 15.9348C9.39016 15.7456 9.43083 15.5257 9.57102 15.3754V15.3742L12.7911 11.946H12.7921C12.8906 11.8412 13.0211 11.7888 13.1496 11.7888C13.278 11.7888 13.4075 11.8412 13.507 11.946H13.5102ZM10.867 18.431C9.90597 18.7477 8.94605 19.0633 7.98507 19.38C5.72708 20.124 5.73671 20.6196 6.35311 18.3045L7.32373 14.6587L7.32052 14.6553L13.2127 8.38115L16.7634 12.1614L10.8702 18.4355L10.867 18.431ZM7.92942 15.3036L10.2613 17.7861C9.62987 17.9935 8.99849 18.2008 8.36818 18.407C6.88497 18.8935 6.89139 19.2194 7.29483 17.6984L7.92942 15.3036Z"
+                                                                fill="white" />
+                                                        </svg>
+                                                    </a>
+                                                    <span class="tooltiptext">
+                                                        ویرایش
+                                                    </span>
+                                                </div>
+
+                                            </div>
+                                            <div class="ms-1 ">
+                                                <div class="zp-tooltip">
+                                                    <a href="">
+                                                        <svg width="22" height="22" viewBox="0 0 25 25" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <rect width="25" height="25" rx="5" fill="#173040" />
+                                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                d="M6.27868 7.01912H10.826V6.39779C10.826 6.17901 11.0265 6 11.2724 6H13.783C14.0288 6 14.2295 6.1789 14.2295 6.39779V7.01923H18.7213C18.8749 7.01923 19 7.13106 19 7.26774V8.48587H6V7.26764C6 7.13095 6.12527 7.01912 6.27868 7.01912ZM7.03183 9.13206H18.0651C18.2951 9.13206 18.5039 9.30123 18.4831 9.50489L17.5494 18.6275C17.5287 18.8313 17.3606 19 17.1311 19H7.95264C7.723 19 7.55463 18.8316 7.53421 18.6275L6.6134 9.50489C6.59298 9.30049 6.8016 9.13206 7.03183 9.13206ZM14.202 10.549H15.3735V17.4589H14.202V10.549ZM9.57068 10.549H10.7423V17.4589H9.57068V10.549ZM11.8861 10.549H13.0579V17.4589H11.8861V10.549Z"
+                                                                fill="white" />
+                                                        </svg>
+
+
+                                                    </a>
+                                                    <span class="tooltiptext">
+                                                        حذف
+                                                    </span>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>حکم کاری سال 1403</td>
+                                    <td>دارد</td>
+                                    <td> لورم ایپسوم متن ساختگی در صنعت</td>
+                                    <td> ۱۴۰۲/۱۱/۱۱</td>
+                                    <td> ۱۴۰۲/۱۱/۱۱</td>
+                                    <td>
+                                        <div class="d-flex justify-content-end ">
+                                            <div class="me-1 ">
+
+                                                <div class="zp-tooltip">
+                                                    <a href="">
+                                                        <svg width="22" height="22" viewBox="0 0 25 25" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <rect width="25" height="25" rx="5" fill="#173040" />
+                                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                d="M16.3632 6.25293L18.7624 8.80725C19.0792 9.14449 19.0792 9.69591 18.7624 10.0331L17.4355 11.4459L13.8847 7.66567L15.2117 6.25293C15.5285 5.91569 16.0464 5.91569 16.3632 6.25293ZM13.5102 11.946V11.9472C13.6086 12.052 13.6579 12.191 13.6579 12.3277C13.6579 12.4644 13.6086 12.6023 13.5102 12.7082V12.7094L13.5091 12.7105L10.2901 16.1387H10.2891C10.2613 16.1683 10.2302 16.1934 10.1992 16.215H10.1981C10.166 16.2367 10.1328 16.2538 10.0986 16.2663C9.92095 16.3324 9.71441 16.2891 9.57316 16.1387H9.57209V16.1376C9.54426 16.1079 9.52072 16.0749 9.50039 16.0418V16.0407C9.48005 16.0065 9.464 15.9712 9.45223 15.9348C9.39016 15.7456 9.43083 15.5257 9.57102 15.3754V15.3742L12.7911 11.946H12.7921C12.8906 11.8412 13.0211 11.7888 13.1496 11.7888C13.278 11.7888 13.4075 11.8412 13.507 11.946H13.5102ZM10.867 18.431C9.90597 18.7477 8.94605 19.0633 7.98507 19.38C5.72708 20.124 5.73671 20.6196 6.35311 18.3045L7.32373 14.6587L7.32052 14.6553L13.2127 8.38115L16.7634 12.1614L10.8702 18.4355L10.867 18.431ZM7.92942 15.3036L10.2613 17.7861C9.62987 17.9935 8.99849 18.2008 8.36818 18.407C6.88497 18.8935 6.89139 19.2194 7.29483 17.6984L7.92942 15.3036Z"
+                                                                fill="white" />
+                                                        </svg>
+                                                    </a>
+                                                    <span class="tooltiptext">
+                                                        ویرایش
+                                                    </span>
+                                                </div>
+
+                                            </div>
+                                            <div class="ms-1 ">
+                                                <div class="zp-tooltip">
+                                                    <a href="">
+                                                        <svg width="22" height="22" viewBox="0 0 25 25" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <rect width="25" height="25" rx="5" fill="#173040" />
+                                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                d="M6.27868 7.01912H10.826V6.39779C10.826 6.17901 11.0265 6 11.2724 6H13.783C14.0288 6 14.2295 6.1789 14.2295 6.39779V7.01923H18.7213C18.8749 7.01923 19 7.13106 19 7.26774V8.48587H6V7.26764C6 7.13095 6.12527 7.01912 6.27868 7.01912ZM7.03183 9.13206H18.0651C18.2951 9.13206 18.5039 9.30123 18.4831 9.50489L17.5494 18.6275C17.5287 18.8313 17.3606 19 17.1311 19H7.95264C7.723 19 7.55463 18.8316 7.53421 18.6275L6.6134 9.50489C6.59298 9.30049 6.8016 9.13206 7.03183 9.13206ZM14.202 10.549H15.3735V17.4589H14.202V10.549ZM9.57068 10.549H10.7423V17.4589H9.57068V10.549ZM11.8861 10.549H13.0579V17.4589H11.8861V10.549Z"
+                                                                fill="white" />
+                                                        </svg>
+
+
+                                                    </a>
+                                                    <span class="tooltiptext">
+                                                        حذف
+                                                    </span>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+
                     </div>
+                    <div class="d-flex justify-content-center pt-3 ">
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination">
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Previous">
+                                        <span aria-hidden="true">&laquo;</span>
+                                    </a>
+                                </li>
+                                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Next">
+                                        <span aria-hidden="true">&raquo;</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <!-- end table -->
                 </div>
             </div>
         </div>

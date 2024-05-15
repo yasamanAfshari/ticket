@@ -307,3 +307,19 @@ input::placeholder {
 .select-style{
     border: 1px solid var(--stroke);
 }
+.ticket-box .dropdown-toggle::after{
+    display: none;
+}
+.referral .dropdown-menu{
+    height: 170px;
+    overflow-y: scroll;
+}
+.dropdown-menu::-webkit-scrollbar{
+    background-color: var(--bg-color);
+    border-radius: 10px;
+    width: 8px;
+}
+.dropdown-menu::-webkit-scrollbar-thumb {
+    background-color: #b5b5b5;
+    border-radius: 10px;
+}

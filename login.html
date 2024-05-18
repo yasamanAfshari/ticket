@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="Css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="Css/Font/css/fontawesome.css">
+    <link rel="stylesheet" href="Css/Font/css/solid.css">
+    <link rel="stylesheet" href="Css/Font/regular.css">
+    <link rel="stylesheet" href="Css/btn.css">
+    <link rel="stylesheet" href="Css/login.css">
+    <link rel="stylesheet" id="switcher-id" href="">
+    <link rel="stylesheet" href="Css/persian-datepicker.css">
+
+
+</head>
+
+<body>
+   
+
+    <div class="row w-100 m-0 ">
+        <div class="col-lg-3 col-12  m-0 p-0  ">
+            <div class="right-login m-0 p-0 d-flex  justify-content-center ">
+                
+                    <div class=" d-flex align-items-center flex-column justify-content-center ">
+                        <div class=" d-flex flex-column align-items-center ">
+                            <img src="Image/logo-zp.png" alt="" class="zp-logo d-block ">
+                           
+                        </div>
+                        <a class="navbar-brand" href="#">
+                                
+                            <span>
+                                ZamanPardaz
+                            </span>
+                        </a>
+
+                        <div class=" d-none d-md-inline  ">
+                            <h6 class=" header-txt">سیستم پشتیبانی و تیکت زمان پرداز</h6>
+                        </div>
+                    </div>
+
+
+            </div>
+        </div>
+        <div class="col-lg-9 p-0 col-12  ">
+            
+            <div class="box-wrapper d-flex flex-column  align-items-center p-3 ">
+                <div class=" d-md-flex d-none mb-5">
+                    <label class="switch">
+                        <span class="switch__icon switch__icon--light">
+                            <i class="fas fa-solid fa-sun"></i>
+                        </span>
+                        <input class="switch__input" id="switch_input" type="checkbox" role="switch"
+                            onchange="onChangeTheme()" />
+                        <span class="switch__icon switch__icon--dark">
+                            <i class="fa-solid fa-moon"></i>
+                        </span>
+                    </label>
+                </div>
+                <div class="container-fluid ">
+                    <div class=" d-flex justify-content-center align-items-center flex-column">
+                        <h5 class="pb-3 title">خوش آمدید</h5>
+                        <h6 class="secondary-font">ورود/ ثبت نام</h6>
+
+                        <form action="#" class="login-form d-flex flex-column align-items-center ">
+                            <div class="form-floating">
+                                <input type="email" class="form-control" id="floatingInput" placeholder="search">
+
+                                <label for="floatingInput">
+                                   آدرس ایمیل</label>
+                            </div>
+
+
+                            <div class="form-floating mt-4">
+                                <input type="password" class="form-control" id="floatingInput" placeholder="search">
+
+                                <label for="floatingInput">
+                                   رمز عبور</label>
+                            </div>
+
+
+                            <div class="d-flex w-50 mt-4 ">
+                                <div class="">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            مرا به خاطر بسپار
+                                        </label>
+                                    </div>
+                                </div>
+                               
+                            </div>
+                            <div class="d-flex justify-content-center mt-5">
+                                <button type="button" class="d-flex justify-content-center align-items-center  btn-register">
+                                    ثبت
+                                </button>
+                            </div>
+                            <div class="register mt-5">
+                                <span>حساب کاربری ندارید؟</span>
+                                <a href="#">ثبت نام</a>
+                                <span>کنید</span>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="Script/jquery-3.6.1.min.js"></script>
+    <script src="Script/bootstrap.bundle.min.js"></script>
+    <script src="Script/theme-switcher.js"></script>
+    <script src="Script/mainJS.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,172 @@
+
+@font-face {
+    font-family: "IRANSans";
+    src: url("Font/fonts/ttf/IRANSansWeb.ttf");
+    src: url("Font/fonts/woff/IRANSansWeb.woff");
+}
+
+@font-face {
+    font-family: "adell";
+    src: url("Font/fonts/AdelleSansARA-Regular.otf");
+
+}
+
+@font-face {
+    font-family: "adellBold";
+    src: url("Font/fonts/AdelleSansARA-Heavy.otf");
+
+}
+.small-fs{
+    font-size: 12px;
+}
+
+body {
+    background-color: var(--main-background);
+    direction: rtl;
+    font-size: 16px;
+}
+
+* {
+    text-align: right;
+    font-family: "IRANSans";
+    box-sizing: border-box;
+    color: var(--main-txt);
+}
+
+a {
+    text-decoration: none;
+}
+
+svg {
+
+    color: var(--icon);
+}
+
+.box-wrapper {
+    height: 100vh;
+    background-color: var(--background);
+    border-radius: 7px;
+    box-shadow: 2px 2px 5px 0px rgb(0 0 0 / 5%), -2px -2px 5px 0px rgb(0 0 0 / 5%);
+}
+@media (max-width: 992px){
+    .box-wrapper {
+        height: 100%;
+    }
+    }
+.right-login{
+    background-color: var(--main-background);
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+.login-form {
+    margin: 40px;
+    width: 100%;
+}
+.form-floating {
+    color: var(--icon);
+    width: 50%;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px 0px rgb(0 0 0 / 5%), -1px -1px 2px 0px rgb(0 0 0 / 5%);
+}
+.form-floating>.form-control, .form-floating>.form-control-plaintext, .form-floating>.form-select {
+    height: 40px;
+    padding-top: 1.625rem;
+    padding-bottom: 0.625rem;
+}
+.form-floating>.form-control, .form-floating>.form-control-plaintext {
+    padding: 7px;
+}
+.form-floating>label {
+    display: flex;
+    align-items: center;
+    top: 0px;
+    right: 10px;
+    padding: 0;
+}
+.form-control {
+    background-color: var(--main-background);
+    border: 1px solid var(--stroke);
+}
+
+.form-check-input {
+    background-color: transparent !important;
+}
+.form-check-input:checked {
+    background-color: var(--main-color) !important;
+}
+.form-check-input:checked {
+    background-color: var(--main-color) !important;
+}
+.btn-register {
+    height: 35px;
+    background-color: var(--main-color);
+    border: none;
+    border-radius: 7px;
+    color: var(--txt);
+    width: 120px;
+}
+#page-header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 5;
+    background-color: var(--background);
+}
+
+.top-header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    padding: 5px 8px 5px 8px;
+    height: 55px;
+    box-shadow: 2px 2px 5px 0px rgb(0 0 0 / 5%), -2px -2px 5px 0px rgb(0 0 0 / 5%);
+}
+.header-txt {
+    color: var(--icon);
+}
+.zp-logo {
+    width: 45%;
+}
+@media (max-width: 992px){
+    .zp-logo {
+        width: 5%;
+    }
+    }
+.navbar-brand span {
+    color: var(--main-txt);
+}
+.profile-header div {
+    color: var(--main-txt);
+}
+.profile-name {
+    text-decoration: none;
+    color: var(--main-txt);
+}
+.dropdown-menu {
+    background-color: var(--background);
+    color: var(--main-txt);
+    width: 30px;
+    inset: 10px auto auto -55px !important;
+}
+.profile-header .dropdown-menu li:first-child {
+    border-bottom: 2px solid var(--main-color);
+    padding-bottom: 10px;
+}
+.profile-header div {
+    color: var(--main-txt);
+}
+.dropdown-menu li .dropdown-item {
+    border-bottom: 1px solid var(--stroke);
+    padding: 4px 15px 4px 15px;
+}
+
+.dropdown-item {
+    color: var(--icon);
+}
+.profile-header div {
+    color: var(--main-txt);
+}

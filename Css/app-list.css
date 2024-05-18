@@ -459,3 +459,16 @@ legend{
 }
 
 
+@media (max-width: 576px) {
+    .btn-register{
+        width: 70px;
+    }
+    .form-floating{
+        width: 75%;
+    }
+}
+@media (max-width: 400px){
+.form-floating {
+    width: 100%;
+}
+}

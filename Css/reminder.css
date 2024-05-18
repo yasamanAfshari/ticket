@@ -350,3 +350,16 @@ table .btn-register {
 .form-control:focus .form-floating>label {
     font-size: 5px !important;
 }
+@media (max-width: 576px) {
+    .btn-register{
+        width: 70px;
+    }
+    .form-floating{
+        width: 75%;
+    }
+}
+@media (max-width: 400px){
+.form-floating {
+    width: 100%;
+}
+}

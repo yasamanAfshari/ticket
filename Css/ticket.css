@@ -615,3 +615,32 @@ input::placeholder {
     border-radius: 10px;
     background-color: #01A437;
 }
+.bubble svg{
+    color: var(--txt) !important;
+}
+.btn-file{
+    background:none;
+    border: 0;
+}
+.btn2 {
+    border: 1px solid var(--main-color);
+    height: 35px;
+    background-color: var(--background);
+    border-radius: 7px;
+    color: var(--main-txt);
+    width: 100px;
+}
+.modal-body{
+    height: 250px;
+    overflow-y: scroll;
+    color: var(--main-txt);
+}
+.modal-body::-webkit-scrollbar{
+    background-color: var(--bg-color);
+    border-radius: 10px;
+    width: 8px;
+}
+.modal-body::-webkit-scrollbar-thumb {
+    background-color: #b5b5b5;
+    border-radius: 10px;
+}

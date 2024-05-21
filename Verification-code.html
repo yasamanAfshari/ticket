@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>app-activation</title>
+    <link rel="stylesheet" href="Css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="Css/Font/css/fontawesome.css">
+    <link rel="stylesheet" href="Css/Font/css/solid.css">
+    <link rel="stylesheet" href="Css/Font/regular.css">
+    <link rel="stylesheet" href="Css/btn.css">
+    <link rel="stylesheet" href="Css/layout.css">
+    <link rel="stylesheet" href="Css/layout-responsive.css">
+    <link rel="stylesheet" href="Css/app-activation.css">
+    <link rel="stylesheet" id="switcher-id" href="">
+    <link rel="stylesheet" href="Css/persian-datepicker.css">
+
+
+</head>
+
+<body>
+    <header id="page-header">
+        <div class=" w-100 pt-0 pb-0 top-header">
+            <div class=" w-100 row">
+                <div class="col-7 d-flex ">
+                    <div class="row d-flex align-items-center w-100">
+                        <div class="col-2 d-inline d-md-none ">
+                            <a data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                                aria-controls="offcanvasExample">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-menu">
+                                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                                </svg>
+                            </a>
+
+
+                            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+                                aria-labelledby="offcanvasExampleLabel">
+                                <div class="offcanvas-header">
+
+                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                        aria-label="Close"></button>
+                                </div>
+
+
+                            </div>
+                        </div>
+                        <div class="col-10 d-flex ">
+                            <div class="row d-flex align-items-center ">
+                                <div class="col-6 d-flex flex-column flex-sm-row ">
+                                    <a class="navbar-brand" href="#">
+                                        <img src="Image/logo-zp.png" alt="">
+                                        <span>
+                                            ZamanPardaz
+                                        </span>
+                                    </a>
+
+                                </div>
+                                <div class="col-6 d-none d-md-inline  ">
+                                    <h6 class=" header-txt">سیستم پشتیبانی و تیکت زمان پرداز</h6>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-5 " dir="ltr">
+
+                    <div class="d-flex profile-header">
+
+                        <div class=" d-md-flex d-none ">
+                            <label class="switch">
+                                <span class="switch__icon switch__icon--light">
+                                    <i class="fas fa-solid fa-sun"></i>
+                                </span>
+                                <input class="switch__input" id="switch_input" type="checkbox" role="switch"
+                                    onchange="onChangeTheme()" />
+                                <span class="switch__icon switch__icon--dark">
+                                    <i class="fa-solid fa-moon"></i>
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </header>
+
+    <div class="container-fluid mt-4">
+        <div class="row justify-content-center ">
+            <div class="col-5 ">
+                <div class="box-wrapper">
+                    <div class="title mt-2 p-3">
+                        <h5>کد تایید</h5>
+
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center flex-column p-2 ">
+                     
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="floatingInput"
+                                placeholder="name" tabindex="1">
+                            <label for="floatingInput">کد تایید</label>
+                        </div>
+                       
+                        <button type="button" class="d-flex justify-content-center align-items-center  btn-register" >
+                            ثبت
+                        </button>
+                        
+                    </div>
+                   
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="Script/jquery-3.6.1.min.js"></script>
+    <script src="Script/bootstrap.bundle.min.js"></script>
+    <script src="Script/theme-switcher.js"></script>
+    <script src="Script/mainJS.js"></script>
+</body>
+
+</html>

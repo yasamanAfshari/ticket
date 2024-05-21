@@ -630,17 +630,99 @@ input::placeholder {
     color: var(--main-txt);
     width: 100px;
 }
-.modal-body{
-    height: 250px;
-    overflow-y: scroll;
+
+.modal-header{
     color: var(--main-txt);
 }
-.modal-body::-webkit-scrollbar{
+.btn-register {
+    height: 35px;
+    background-color: var(--main-color);
+    border: none;
+    border-radius: 7px;
+    color: var(--txt);
+    width: 90px;
+}
+tbody td .dropdown-toggle::after{
+    display: none;
+}
+.dropdown-item.active, .dropdown-item:active{
+    background-color: var(--main-color);
+}
+tbody td .dropdown-menu{
+    min-width: 130px !important;
+}
+.table-scroll-wrapper{
+    height: 320px;
+    overflow-y: scroll;
+    padding: 0;
+  
+}
+.table-scroll-wrapper::-webkit-scrollbar {
+
     background-color: var(--bg-color);
     border-radius: 10px;
     width: 8px;
 }
-.modal-body::-webkit-scrollbar-thumb {
+
+.table-scroll-wrapper::-webkit-scrollbar-thumb {
     background-color: #b5b5b5;
     border-radius: 10px;
+}
+.add-btn{
+    height: 35px;
+    background-color: var(--main-color);
+    border: none;
+    border-radius: 7px;
+    color: var(--txt);
+    width: 35px;
+}
+.add-btn svg{
+    color: var(--txt);
+}
+
+.table-wrapper table thead {
+    position: sticky;
+    top: -1px;
+    z-index: 3;
+}
+.table-responsive {
+    overflow: scroll;
+   
+
+}
+.table-wrapper {
+
+    max-height: 350px;
+}
+
+.table-wrapper::-webkit-scrollbar {
+
+    background-color: var(--bg-color);
+    border-radius: 10px;
+    width: 8px;
+    height: 8px;
+}
+
+.table-wrapper::-webkit-scrollbar-thumb {
+    background-color: #b5b5b5;
+    border-radius: 10px;
+}
+tr:hover {
+    background-color: var(--main-background);
+}
+thead tr {
+    color: var(--main-txt);
+}
+.table thead {
+    background-color: var(--table-header);
+}
+tbody {
+    color: var(--icon);
+    vertical-align: middle !important;
+}
+th{
+    font-weight: normal;
+}
+.modal{
+direction: rtl;
 }

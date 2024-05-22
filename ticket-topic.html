@@ -761,18 +761,81 @@
                                     </div>
                                     <div class="modal-body">
                                         
-                                        <div class="position-relative select-style">
-                                            <select class="form-control" placeholder="موضوع">
-                                                <option value="...">حضور و غیاب</option>
-                                                <option value="...">باشگاهی</option>
-                                                <option value="...">آموزشگاه</option>                                                
-                                            </select>
-                                            <label for="" class="select-label ">
+                                        <div class="select-style">
+                              
+                                            <button
+                                                class="btn form-select d-flex align-items-center justify-content-between w-100 border-0"
+                                                type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true"
+                                                aria-expanded="false">
                                                 ریشه
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                                    <path fill-rule="evenodd" d="M12.53 16.28a.75.75 0 0 1-1.06 0l-7.5-7.5a.75.75 0 0 1 1.06-1.06L12 14.69l6.97-6.97a.75.75 0 1 1 1.06 1.06l-7.5 7.5Z" clip-rule="evenodd"></path>
-                                                </svg>
-                                            </label>
+                                            </button>
+                                            <div class="MultiselectDropDown dropdown-menu text-end bg-white border shadow-sm rounded active py-0 zp-scrollView zp-scrollViewX "
+                                                aria-labelledby="dropdownMenuButton">
+                                                <div class="position-relative m-1">
+                                                    <label class="mx-2 position-absolute top-50 end-0 translate-middle-y"
+                                                        for="docsearch-input" id="docsearch-label">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+                                                            fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z">
+                                                            </path>
+                                                        </svg>
+                                                    </label>
+                                                    <input class="form-control pe-5" aria-autocomplete="both"
+                                                        aria-labelledby="docsearch-label" id="docsearch-input" autocomplete="off"
+                                                        autocorrect="off" autocapitalize="off" enterkeyhint="search"
+                                                        spellcheck="false" autofocus="true" placeholder="جستجو..." maxlength="64"
+                                                        type="search">
+                                                </div>
+                                                <div class="dropdown-divider"></div>
+                                                <div class="px-3">
+                                                    <ul class="nav flex-column gap-2 p-0">
+            
+                                                        <li class="nav-item d-flex align-items-center">
+                                                            <div class="">
+                                                                <input class="form-check-input mt-0" type="checkbox" value="person1"
+                                                                    id="person1">
+                                                                <label class="form-check-label" for="person1">
+                                                                   حضور غیاب
+                                                                </label>
+                                                            </div>
+                                                        </li>
+                                                        <li class="nav-item d-flex align-items-center">
+                                                            <div class="">
+                                                                <input class="form-check-input mt-0" type="checkbox" value="person2"
+                                                                    id="person2">
+                                                                <label class="form-check-label" for="person2">
+                                                                    باشگاهی
+                                                                </label>
+                                                            </div>
+                                                        </li>
+                                                        <li class="nav-item d-flex align-items-center">
+                                                            <div class="">
+                                                                <input class="form-check-input mt-0" type="checkbox" value="person3"
+                                                                    id="person3">
+                                                                <label class="form-check-label" for="person3">
+                                                                    مدرسه
+                                                                </label>
+                                                            </div>
+            
+                                                            
+                                                        </li>
+                                                        <li class="nav-item d-flex align-items-center">
+                                                            <div class="">
+                                                                <input class="form-check-input mt-0" type="checkbox" value="person3"
+                                                                    id="person3">
+                                                                <label class="form-check-label" for="person3">
+                                                                   پارکینگ
+                                                                </label>
+                                                            </div>
+            
+                                                            
+                                                        </li>
+                                                    </ul>
+            
+                                                </div>
+                                            </div>
+            
                                         </div>
 
                                         <div class="form-floating mt-2 ">

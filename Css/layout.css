@@ -296,3 +296,19 @@ rect{
 .form-check-input:checked {
     background-color: var(--main-color) !important;
 }
+.MultiselectDropDown.dropdown-menu{
+    margin-top: -17px!important;
+    width: 15%;
+    height: 180px;
+    overflow: auto;
+}
+.select-style {
+    border: 1px solid var(--stroke);
+}
+.select-style {
+    width: 100%;
+    /* color: var(--icon); */
+    border-radius: 6px;
+    /* background-color: var(--main-background); */
+    box-shadow: 1px 1px 2px 0px rgb(0 0 0 / 5%), -1px -1px 2px 0px rgb(0 0 0 / 5%);
+}

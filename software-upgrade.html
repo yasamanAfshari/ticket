@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>software-upgrade</title>
+    <link rel="stylesheet" href="Css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="Css/layout.css">
+    <link rel="stylesheet" href="Css/Font/css/fontawesome.css">
+    <link rel="stylesheet" href="Css/Font/css/solid.css">
+    <link rel="stylesheet" href="Css/Font/regular.css">
+    <link rel="stylesheet" href="Css/btn.css">
+    <link rel="stylesheet" href="Css/layout-responsive.css">
+    <link rel="stylesheet" href="Css/software-upgrade.css">
+
+    <link rel="stylesheet" id="switcher-id" href="">
+
+</head>
+
+<body>
+    <header id="page-header">
+        <div class=" w-100 pt-0 pb-0 top-header">
+            <div class=" w-100 row">
+                <div class="col-7 d-flex ">
+                    <div class="row d-flex align-items-center w-100">
+                        <div class="col-2 d-inline d-md-none ">
+                            <a data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                                aria-controls="offcanvasExample">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-menu">
+                                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                                </svg>
+                            </a>
+
+
+                            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+                                aria-labelledby="offcanvasExampleLabel">
+                                <div class="offcanvas-header">
+
+                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                        aria-label="Close"></button>
+                                </div>
+
+                                <!-- sidebar menue in mobile -->
+                                <div class="offcanvas-body">
+                                    <div class="col-2 sidebar-wrapper ">
+                                        <nav class='animated bounceInDown'>
+
+
+                                            <div class="">
+
+                                                <div class="text-sidebar-wrapper mt-3">
+                                                    <h5>شرکت آریا</h5>
+                                                    <h6>1B2F8FA4</h6>
+                                                </div>
+                                                <div class="d-flex flex-column align-items-center  ">
+                                                    <span class="ps-0 ">فعال سازی در</span>
+                                                    <div>سه شنبه 12 بهمن 1402</div>
+                                                </div>
+                                            </div>
+                                            <div class="g-line"></div>
+                                            <div class="d-flex justify-content-center ">
+                                                <span>روز تا پایان پشتیبانی</span>
+                                                <span class="ps-0 ">200</span>
+
+                                            </div>
+                                            <div class="line"></div>
+                                            <ul>
+                                                <li>
+                                                    <a href='#'>
+                                                        <span> ثبت تیکت</span>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                                            viewBox="0 0 24 24" fill="currentColor">
+                                                            <path
+                                                                d="M3.375 3C2.339 3 1.5 3.84 1.5 4.875v.75c0 1.036.84 1.875 1.875 1.875h17.25c1.035 0 1.875-.84 1.875-1.875v-.75C22.5 3.839 21.66 3 20.625 3H3.375Z" />
+                                                            <path fill-rule="evenodd"
+                                                                d="m3.087 9 .54 9.176A3 3 0 0 0 6.62 21h10.757a3 3 0 0 0 2.995-2.824L20.913 9H3.087ZM12 10.5a.75.75 0 0 1 .75.75v4.94l1.72-1.72a.75.75 0 1 1 1.06 1.06l-3 3a.75.75 0 0 1-1.06 0l-3-3a.75.75 0 1 1 1.06-1.06l1.72 1.72v-4.94a.75.75 0 0 1 .75-.75Z"
+                                                                clip-rule="evenodd" />
+                                                        </svg>
+
+
+
+
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href='#'>
+                                                        <span> لیست تیکت ها</span>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                                            viewBox="0 0 24 24" fill="currentColor">
+                                                            <path
+                                                                d="M3.375 3C2.339 3 1.5 3.84 1.5 4.875v.75c0 1.036.84 1.875 1.875 1.875h17.25c1.035 0 1.875-.84 1.875-1.875v-.75C22.5 3.839 21.66 3 20.625 3H3.375Z" />
+                                                            <path fill-rule="evenodd"
+                                                                d="m3.087 9 .54 9.176A3 3 0 0 0 6.62 21h10.757a3 3 0 0 0 2.995-2.824L20.913 9H3.087Zm6.163 3.75A.75.75 0 0 1 10 12h4a.75.75 0 0 1 0 1.5h-4a.75.75 0 0 1-.75-.75Z"
+                                                                clip-rule="evenodd" />
+                                                        </svg>
+
+
+
+
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-10 d-flex ">
+                            <div class="row d-flex align-items-center ">
+                                <div class="col-6 d-flex flex-column flex-sm-row ">
+                                    <a class="navbar-brand" href="#">
+                                        <img src="Image/logo-zp.png" alt="">
+                                        <span>
+                                            ZamanPardaz
+                                        </span>
+                                    </a>
+
+                                </div>
+                                <div class="col-6 d-none d-md-inline  ">
+                                    <h6 class=" header-txt">سیستم پشتیبانی و تیکت زمان پرداز</h6>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-5 " dir="ltr">
+
+                    <div class="d-flex profile-header">
+                        <img src="Image/user.png" alt="">
+                        <div class=" d-flex align-items-center m-2" dir="rtl">
+                            <div class="dropdown d-flex align-items-center" dir="rtl">
+                                <a class="dropdown-toggle profile-name" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    یاسمن افشاری
+                                </a>
+
+                                <ul class="dropdown-menu w-50">
+                                    <li class="ps-3 d-flex flex-row">
+                                        <img src="Image/user.png" class="w-25 h-25 me-1" alt="">
+                                        <div class="d-flex flex-column ">
+                                            <span class="small-fs">یاسمن افشاری</span>
+                                            <span class="small-fs">۰۹۳۶ ۶۶۶ ۶۶۶۶ </span>
+                                        </div>
+
+                                    </li>
+
+                                    <li><a class="dropdown-item" href="#">ویرایش</a></li>
+                                    <li><a class="dropdown-item text-danger" href="#">خروج</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class=" d-flex">
+                            <label class="switch">
+                                <span class="switch__icon switch__icon--light">
+                                    <i class="fas fa-solid fa-sun"></i>
+                                </span>
+                                <input class="switch__input" id="switch_input" type="checkbox" role="switch"
+                                    onchange="onChangeTheme()" />
+                                <span class="switch__icon switch__icon--dark">
+                                    <i class="fa-solid fa-moon"></i>
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </header>
+
+
+
+    <div class="row w-100 ">
+        <!-- sidebar -->
+        <div class="col-2 d-none d-md-inline ">
+            <div class="sidebar-wrapper  ">
+                <nav class='animated bounceInDown'>
+                    <div class="">
+
+                        <div class="text-sidebar-wrapper mt-3">
+                            <h5>شرکت آریا</h5>
+                            <h6>1B2F8FA4</h6>
+                        </div>
+                        <div class="d-flex flex-column align-items-center  ">
+                            <span class="ps-0 ">فعال سازی در</span>
+                            <div>سه شنبه 12 بهمن 1402</div>
+                        </div>
+                    </div>
+                    <div class="g-line"></div>
+                    <div class="d-flex justify-content-center ">
+                        <span>روز تا پایان پشتیبانی</span>
+                        <span class="ps-0 ">200</span>
+
+                    </div>
+                    <div class="line"></div>
+                    <ul>
+                        <li>
+                            <a href='#'
+                                class="flex-lg-row justify-content-lg-end justify-content-center flex-column-reverse align-items-center   ">
+                                <span class="d-lg-flex d-none  "> ثبت تیکت</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                    fill="currentColor">
+                                    <path
+                                        d="M3.375 3C2.339 3 1.5 3.84 1.5 4.875v.75c0 1.036.84 1.875 1.875 1.875h17.25c1.035 0 1.875-.84 1.875-1.875v-.75C22.5 3.839 21.66 3 20.625 3H3.375Z" />
+                                    <path fill-rule="evenodd"
+                                        d="m3.087 9 .54 9.176A3 3 0 0 0 6.62 21h10.757a3 3 0 0 0 2.995-2.824L20.913 9H3.087ZM12 10.5a.75.75 0 0 1 .75.75v4.94l1.72-1.72a.75.75 0 1 1 1.06 1.06l-3 3a.75.75 0 0 1-1.06 0l-3-3a.75.75 0 1 1 1.06-1.06l1.72 1.72v-4.94a.75.75 0 0 1 .75-.75Z"
+                                        clip-rule="evenodd" />
+                                </svg>
+
+
+
+
+                            </a>
+                        </li>
+                        <li>
+                            <a href='#'
+                                class="flex-lg-row justify-content-lg-end justify-content-center flex-column-reverse align-items-center   ">
+                                <span class="d-lg-flex d-none  "> لیست تیکت ها</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                    fill="currentColor">
+                                    <path
+                                        d="M3.375 3C2.339 3 1.5 3.84 1.5 4.875v.75c0 1.036.84 1.875 1.875 1.875h17.25c1.035 0 1.875-.84 1.875-1.875v-.75C22.5 3.839 21.66 3 20.625 3H3.375Z" />
+                                    <path fill-rule="evenodd"
+                                        d="m3.087 9 .54 9.176A3 3 0 0 0 6.62 21h10.757a3 3 0 0 0 2.995-2.824L20.913 9H3.087Zm6.163 3.75A.75.75 0 0 1 10 12h4a.75.75 0 0 1 0 1.5h-4a.75.75 0 0 1-.75-.75Z"
+                                        clip-rule="evenodd" />
+                                </svg>
+
+
+
+
+                            </a>
+                        </li>
+                    </ul>
+
+                </nav>
+
+            </div>
+        </div>
+
+
+        <!-- main content -->
+        <div class="col-12 col-md-10 ">
+            <div class="container-fluid   ">
+                <div class="title mt-2 ">
+                    <h5>ارتقای نرم افزار</h5>
+                </div>
+                <!-- //section 1 -->
+                <div class="box-wrapper zp-scroll d-flex mb-3   p-4  ">
+                    <div class="app-wrapper d-flex gap-3 ">
+                        <div class="app-item active-app">
+                            <div>
+                                نرم افزار حضور غیاب
+                            </div>
+                        </div>
+                        <div class="app-item">
+                            <div>
+                                نرم افزار باشگاهی
+                            </div>
+                        </div>
+                        <div class="app-item">
+                            <div>
+                                نرم افزار مدرسه
+                            </div>
+                        </div>
+                        <div class="app-item">
+                            <div>
+                                نرم افزار پارکینگ
+                            </div>
+                        </div>
+                        <div class="app-item">
+                            <div>
+                                نرم افزار تخلیه آنلاین
+                            </div>
+                        </div>
+                        <div class="app-item">
+                            <div>
+                                نرم افزار حضور غیاب
+                            </div>
+                        </div>
+                        <div class="app-item">
+                            <div>
+                                نرم افزار حضور غیاب
+                            </div>
+                        </div>
+                    </div>
+
+                 </div>
+
+                <!-- //section 2 -->
+                <div class="row mb-3 ">
+                    <div class="col-lg-9 col-12  ">
+                        <div class="box-wrapper zp-scroll d-flex  p-4  ">
+                           <div class="feature-wrapper d-flex gap-3 ">
+                            <div class="feature-item d-flex flex-column justify-content-between active-feature">
+                                <div class="version-header">
+                                    نسخه پیشرفته
+                                </div>
+                                <div class="p-2 feature">
+                                    <div class=" mb-2 ">
+                                       
+                                          <span class="price">
+                                            ۵۰۰
+                                          </span>
+                                          <span class="toman">
+                                            هزار تومان
+                                          </span>
+                                    </div>
+                                    <div class=" mb-2 ">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" width="18" height="18" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                                          </svg>
+                                          
+                                          <span>
+                                            امکان گزارشگیری
+                                          </span>
+                                    </div>
+                                    <div class=" mb-2 ">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" width="18" height="18" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                                          </svg>
+                                          
+                                          <span>
+                                            امکان گزارشگیری
+                                          </span>
+                                    </div>
+                                    <div class=" mb-2 ">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" width="18" height="18" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                                          </svg>
+                                          
+                                          <span>
+                                            امکان گزارشگیری
+                                          </span>
+                                    </div>
+                                </div>
+                                <div class=" p-2 d-flex  flex-column align-items-center  ">
+                                    
+                                   
+                                    <button type="button" class="d-flex justify-content-center align-items-center  btn-register deactive-btn ">
+                                        لغو انتخاب
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="feature-item d-flex flex-column justify-content-between ">
+                                <div class="version-header">
+                                    نسخه حرفه ای
+                                </div>
+                                <div class="p-2 feature ">
+                                    <div class=" mb-2 ">
+                                       
+                                          <span class="price">
+                                            ۳۵۰
+                                          </span>
+                                          <span class="toman">
+                                            هزار تومان
+                                          </span>
+                                    </div>
+                                    <div class=" mb-2 ">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" width="18" height="18" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                                          </svg>
+                                          
+                                          <span>
+                                            امکان گزارشگیری
+                                          </span>
+                                    </div>
+                                    <div class=" mb-2 ">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" width="18" height="18" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                                          </svg>
+                                          
+                                          <span>
+                                            امکان گزارشگیری
+                                          </span>
+                                    </div>
+                                    <div class=" mb-2 ">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" width="18" height="18" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                                          </svg>
+                                          
+                                          <span>
+                                            امکان گزارشگیری
+                                          </span>
+                                    </div>
+                                </div>
+                                <div class=" p-2 d-flex  flex-column align-items-center  ">
+                                    
+                                   
+                                    <button type="button" class="d-flex justify-content-center align-items-center  btn-register">
+                                        انتخاب
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="feature-item d-flex flex-column justify-content-between ">
+                                <div class="version-header">
+                                    نسخه وب
+                                </div>
+                                <div class="p-2 feature ">
+                                    <div class=" mb-2 ">
+                                       
+                                          <span class="price">
+                                            ۲۳۵
+                                          </span>
+                                          <span class="toman">
+                                            هزار تومان
+                                          </span>
+                                    </div>
+                                    <div class=" mb-2 ">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" width="18" height="18" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                                          </svg>
+                                          
+                                          <span>
+                                            امکان گزارشگیری
+                                          </span>
+                                    </div>
+                                    <div class=" mb-2 ">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" width="18" height="18" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                                          </svg>
+                                          
+                                          <span>
+                                            امکان گزارشگیری
+                                          </span>
+                                    </div>
+                                    <div class=" mb-2 ">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" width="18" height="18" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                                          </svg>
+                                          
+                                          <span>
+                                            امکان گزارشگیری
+                                          </span>
+                                    </div>
+                                </div>
+                                <div class=" p-2 d-flex  flex-column align-items-center  ">
+                                    
+                                   
+                                    <button type="button" class="d-flex justify-content-center align-items-center  btn-register">
+                                        انتخاب
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="feature-item d-flex flex-column justify-content-between ">
+                                <div class="version-header">
+                                    تمدید پشتیبانی
+                                </div>
+                                <div class="p-2 feature ">
+                                    <div class=" mb-2 ">
+                                       
+                                          <span class="price">
+                                            ۴۲۰
+                                          </span>
+                                          <span class="toman">
+                                            هزار تومان
+                                          </span>
+                                    </div>
+                                    <div class=" mb-2 ">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" width="18" height="18" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                                          </svg>
+                                          
+                                          <span>
+                                            امکان گزارشگیری
+                                          </span>
+                                    </div>
+                                    <div class=" mb-2 ">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" width="18" height="18" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                                          </svg>
+                                          
+                                          <span>
+                                            امکان گزارشگیری
+                                          </span>
+                                    </div>
+                                    <div class=" mb-2 ">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" width="18" height="18" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                                          </svg>
+                                          
+                                          <span>
+                                            امکان گزارشگیری
+                                          </span>
+                                    </div>
+                                </div>
+                                <div class=" p-2 d-flex  flex-column align-items-center  ">
+                                    
+                                   
+                                    <button type="button" class="d-flex justify-content-center align-items-center  btn-register">
+                                        انتخاب
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="feature-item d-flex flex-column justify-content-between ">
+                                <div class="version-header">
+                                    نسخه پیشرفته
+                                </div>
+                                <div class="p-2 feature ">
+                                    <div class=" mb-2 ">
+                                       
+                                          <span class="price">
+                                            ۵۰۰
+                                          </span>
+                                          <span class="toman">
+                                            هزار تومان
+                                          </span>
+                                    </div>
+                                    <div class=" mb-2 ">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" width="18" height="18" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                                          </svg>
+                                          
+                                          <span>
+                                            امکان گزارشگیری
+                                          </span>
+                                    </div>
+                                    <div class=" mb-2 ">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" width="18" height="18" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                                          </svg>
+                                          
+                                          <span>
+                                            امکان گزارشگیری
+                                          </span>
+                                    </div>
+                                    <div class=" mb-2 ">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" width="18" height="18" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                                          </svg>
+                                          
+                                          <span>
+                                            امکان گزارشگیری
+                                          </span>
+                                    </div>
+                                </div>
+                                <div class=" p-2 d-flex  flex-column align-items-center  ">
+                                    
+                                   
+                                    <button type="button" class="d-flex justify-content-center align-items-center  btn-register">
+                                        انتخاب
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="feature-item d-flex flex-column justify-content-between ">
+                                <div class="version-header">
+                                    نسخه پیشرفته
+                                </div>
+                                <div class="p-2 feature ">
+                                    <div class=" mb-2 ">
+                                       
+                                          <span class="price">
+                                            ۵۰۰
+                                          </span>
+                                          <span class="toman">
+                                            هزار تومان
+                                          </span>
+                                    </div>
+                                    <div class=" mb-2 ">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" width="18" height="18" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                                          </svg>
+                                          
+                                          <span>
+                                            امکان گزارشگیری
+                                          </span>
+                                    </div>
+                                    <div class=" mb-2 ">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" width="18" height="18" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                                          </svg>
+                                          
+                                          <span>
+                                            امکان گزارشگیری
+                                          </span>
+                                    </div>
+                                    <div class=" mb-2 ">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" width="18" height="18" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                                          </svg>
+                                          
+                                          <span>
+                                            امکان گزارشگیری
+                                          </span>
+                                    </div>
+                                </div>
+                                <div class=" p-2 d-flex  flex-column align-items-center  ">
+                                    
+                                   
+                                    <button type="button" class="d-flex justify-content-center align-items-center  btn-register">
+                                        انتخاب
+                                    </button>
+                                </div>
+                            </div>
+                           </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-12 mt-3 mt-lg-0 ">
+                        <div class="box-wrapper feature-wrapper d-flex gap-3 justify-content-center   p-4  ">
+
+                            <div class="factor-item">
+                                <div class="version-header">
+                                    فاکتور
+                                </div>
+                                <div class=" ps-2 pt-2 mt-1 factor d-flex flex-column   ">
+                                    <div class="feature-factor d-flex flex-column  mb-2  p-2 ">
+                                        <div>
+                                            نسخه پیشرفته
+                                        </div>
+                                        <div class=" d-flex justify-content-end align-items-center ">
+                                            <span class="price2">۵۰۰</span>
+                                            <span class="toman">هزار تومان</span>
+                                        </div>
+                                    </div>
+                                    <div class="feature-factor d-flex flex-column  mb-2  p-2 ">
+                                        <div>
+                                            تمدید پشتیبانی
+                                        </div>
+                                        <div class=" d-flex justify-content-end align-items-center">
+                                            <span class="price2">۴۲۰</span>
+                                            <span class="toman">هزار تومان</span>
+                                        </div>
+                                    </div>
+                                    <div class="feature-factor d-flex flex-column  mb-2  p-2 ">
+                                        <div>
+                                            نسخه وب
+                                        </div>
+                                        <div class=" d-flex justify-content-end align-items-center">
+                                            <span class="price2">۲۳۵ </span>
+                                            <span class="toman">هزار تومان</span>
+                                        </div>
+                                    </div>
+                                    
+                                    
+
+                                </div>
+                                <div class="choose p-2 d-flex  flex-column align-items-center  ">
+                                    <div>
+                                        <div class="toman">مبلغ نهایی:</div>
+                                         <span class="price2">۱,۱۵۵</span>
+                                    <span class="price2">هزار تومان</span>
+                                    </div>
+                                   
+                                    <button type="button" class="d-flex justify-content-center align-items-center  btn-register">
+                                        پرداخت
+                                    </button>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+                <!-- //section 3 -->
+                <div class="row ">
+                    <div class="col-12 ">
+                        <div class="box-wrapper p-4">
+                            <div class="title  ">
+                                <h5>
+                                    امکانات جانبی
+                                </h5>
+                            </div>
+                           
+                            
+                           
+                            <div class="mt-4 pe-0 ps-0  table-wrapper overflow-x-auto ">
+
+                                <table class="table table-responsive">
+                                   
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">
+                                                <div class="form-check  ">
+                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                    
+                                                </div>
+                                            </th>
+                                            <td>پنل پیامک</td>
+                                            <td></td>
+                                            
+                                            
+                                           
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">
+                                                <div class="form-check ">
+                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                    
+                                                </div>
+                                            </th>
+                                            <td>اپلیکیشن موبایل</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">
+                                                <div class="form-check ">
+                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                    
+                                                </div>
+                                            </th>
+                                            <td>تعداد کلاینت</td>
+                                            <td>
+                                                <div class="form-floating ">
+                                                    <input type="number" class="form-control" id="floatingInput" placeholder="" tabindex="1">
+                                                    <label for="floatingInput">تعداد کلاینت</label>
+                                                </div>
+                                            </td>
+                                            
+                                         
+                                        </tr>
+                                       
+                                        <tr>
+                                            <th scope="row">
+                                                <div class="form-check  ">
+                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                    
+                                                </div>
+                                            </th>
+                                            <td>تعداد کاربر</td>
+                                            <td>
+                                                <div class="form-floating ">
+                                                    <input type="number" class="form-control" id="floatingInput" placeholder="" tabindex="1">
+                                                    <label for="floatingInput">تعداد کاربر</label>
+                                                </div>
+                                            </td>
+                                           
+                                        </tr>
+        
+                                    </tbody>
+                                </table>
+        
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="Script/jquery-3.6.1.min.js"></script>
+    <script src="Script/bootstrap.bundle.min.js"></script>
+    <script src="Script/theme-switcher.js"></script>
+    <script src="Script/mainJS.js"></script>
+</body>
+
+</html>

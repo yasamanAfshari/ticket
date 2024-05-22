@@ -1,0 +1,256 @@
+@font-face {
+    font-family: "IRANSans";
+    src: url("Font/fonts/ttf/IRANSansWeb.ttf");
+    src: url("Font/fonts/woff/IRANSansWeb.woff");
+}
+
+@font-face {
+    font-family: "adell";
+    src: url("Font/fonts/AdelleSansARA-Regular.otf");
+
+}
+
+@font-face {
+    font-family: "adellBold";
+    src: url("Font/fonts/AdelleSansARA-Heavy.otf");
+
+}
+.title h5 {
+    font-family: "adellBold";
+    color: var(--main-txt);
+}
+.box-wrapper {
+   
+    background-color: var(--background);
+    border-radius: 7px;
+    box-shadow: 2px 2px 5px 0px rgb(0 0 0 / 5%), -2px -2px 5px 0px rgb(0 0 0 / 5%);
+}
+.zp-scroll{
+    width: 100%;
+    overflow-x: scroll;
+
+}
+.zp-scroll::-webkit-scrollbar {
+    background-color: var(--bg-color);
+    border-radius: 10px;
+    height: 8px;
+}
+
+.zp-scroll::-webkit-scrollbar-thumb {
+    background-color: #b5b5b5;
+    border-radius: 10px;
+}
+
+.container-fluid {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.app-item{
+   height: 80px;
+    width: 150px;
+    border-radius: 7px;
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--main-txt);
+    box-shadow: 1px 1px 2px 0px rgb(0 0 0 / 10%), -1px -1px 2px 0px rgb(0 0 0 / 10%);
+
+}
+
+.app-wrapper::-webkit-scrollbar {
+    background-color: var(--bg-color);
+    border-radius: 10px;
+    width: 8px;
+}
+
+.app-wrapper::-webkit-scrollbar-thumb {
+    background-color: #b5b5b5;
+    border-radius: 10px;
+}
+.version-header{
+    vertical-align: middle;
+    text-align: center;
+    height: 30px;
+    background-color: var(--table-header);
+    color: var(--main-txt);
+    border-radius: 5px 5px 0 0;
+}
+
+.form-check-input {
+    background-color: transparent !important;
+}
+.feature-item{
+    width: 200px;
+    border-radius: 7px;
+    box-shadow: 2px 2px 5px 0px rgb(0 0 0 / 5%), -2px -2px 5px 0px rgb(0 0 0 / 5%);
+}
+.feature{
+    height: 250px;
+    overflow-y: scroll;
+    color: var(--main-txt);
+}
+.feature svg{
+    color: #198754;
+}
+.feature::-webkit-scrollbar {
+    background-color: var(--bg-color);
+    border-radius: 10px;
+    height: 8px;
+    width: 8px;
+}
+
+.feature::-webkit-scrollbar-thumb {
+    background-color: #b5b5b5;
+    border-radius: 10px;
+}
+
+.factor{
+    max-height: 187px;
+    overflow-y: scroll;
+}
+.factor::-webkit-scrollbar {
+    background-color: var(--bg-color);
+    border-radius: 10px;
+    height: 8px;
+    width: 8px;
+}
+
+.factor::-webkit-scrollbar-thumb {
+    background-color: #b5b5b5;
+    border-radius: 10px;
+}
+.factor-item{
+    width: 100%;
+    border-radius: 7px;
+    box-shadow: 2px 2px 5px 0px rgb(0 0 0 / 5%), -2px -2px 5px 0px rgb(0 0 0 / 5%);
+}
+.feature-factor{
+    background-color: var(--main-background);
+    width: 100%;
+    border-radius: 7px;
+    color: var(--main-txt);
+}
+.choose{
+    border-top: 1px solid var(--main-color);
+}
+.btn-register {
+    height: 35px;
+    background-color: var(--main-color);
+    border: none;
+    border-radius: 7px;
+    color: var(--txt);
+    width: 90px;
+}
+.modal-body .form-floating {
+    width: 100% !important;
+}
+
+.form-floating {
+    color: var(--icon);
+    width: 60%;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px 0px rgb(0 0 0 / 5%), -1px -1px 2px 0px rgb(0 0 0 / 5%);
+}
+.form-floating>.form-control, .form-floating>.form-control-plaintext, .form-floating>.form-select {
+    height: 38px;
+    padding-top: 1.625rem;
+    padding-bottom: 0.625rem;
+}
+
+.form-floating>.form-control, .form-floating>.form-control-plaintext {
+    padding: 7px;
+}
+.form-floating>label {
+    display: flex;
+    align-items: center;
+    top: 0px;
+    right: 10px;
+    padding: 0;
+}
+.price{
+    color: #198754;
+    font-family: "adellBold" ;
+    font-size: 30px;
+}
+.price2{
+    
+        color: #198754;
+        font-family: "adellBold" ;
+        font-size: 22px;
+
+}
+.toman{
+    color: var(--icon);
+}
+.active-feature{
+    background-color: var(--ticket-box);
+}
+.active-app{
+    background-color: var(--main-color);
+    color: var(--txt);
+}
+.table-wrapper {
+    max-height: 350px;
+}
+.table-responsive {
+    overflow: scroll;
+}
+.table {
+    border: 1px solid var(--stroke);
+    white-space: nowrap;
+}
+.table-wrapper table thead {
+    position: sticky;
+    top: -1px;
+    z-index: 3;
+}
+.table thead {
+    background-color: var(--table-header);
+}
+thead tr {
+    color: var(--main-txt);
+}
+tr, td {
+    text-align: right;
+}
+tr th {
+    font-weight: normal;
+}
+tbody {
+    color: var(--icon);
+    vertical-align: middle !important;
+}
+
+.table-wrapper table thead {
+    position: sticky;
+    top: -1px;
+    z-index: 3;
+}
+.table-responsive {
+    overflow: scroll;
+   
+
+}
+.table-wrapper {
+    width: 50%;
+    max-height: 350px;
+}
+@media (max-width: 992px) {
+    .table-wrapper {
+        width: 100%;
+        max-height: 350px;
+    }
+    
+}
+.table-wrapper::-webkit-scrollbar {
+
+    background-color: var(--bg-color);
+    border-radius: 10px;
+    width: 8px;
+    height: 8px;
+}
+
+.table-wrapper::-webkit-scrollbar-thumb {
+    background-color: #b5b5b5;
+    border-radius: 10px;
+}

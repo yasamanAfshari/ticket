@@ -105,7 +105,7 @@
 }
 
 .factor{
-    max-height: 187px;
+    max-height: 220px;
     overflow-y: scroll;
 }
 .factor::-webkit-scrollbar {

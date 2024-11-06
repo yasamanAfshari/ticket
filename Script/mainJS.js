@@ -102,3 +102,71 @@ $(function () {
 
  
 })
+ /////
+ function renderChart(data, labels, myChart2) {
+
+  var ctx = document.getElementById("myChart2").getContext('2d');
+
+  var myChart = new Chart(ctx, {
+
+      type: 'line',
+
+      data: {
+
+          labels: labels,
+
+          datasets: [{
+
+              label: 'This week',
+
+              data: data,
+
+              borderColor: 'rgb(0,120,212)',
+
+              backgroundColor: 'rgba(134,187,225,0.19)',
+
+          }]
+
+      },
+
+      options: {
+
+          scales: {
+
+              yAxes: [{
+
+                  ticks: {
+
+                      beginAtZero: true,
+
+                      callback: function (value, index, values) {
+
+                          return float2dollar(value);
+
+                      }
+
+                  }
+
+              }]
+
+          }
+
+      },
+
+  });
+
+}
+$(document).ready(
+
+  function () {
+
+      data = [20000, 14000, 12000, 15000, 18000, 19000, 22000, 19000, 22000];
+
+      labels = ["اردیبهشت", "خرداد", "تیر", "مرداد", "شهریور", "مهر", "آبان", "آذر", "دی"];
+
+      renderChart(data, labels);
+
+  }
+
+);
+
